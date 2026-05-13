@@ -5138,6 +5138,12 @@ function toggleTheme(){
     if(btn) btn.textContent='Light';
   }
 })();
+ function routePreview(){
+  const params = new URLSearchParams(window.location.search);
+  if(params.get('preview') === 'dashboard'){
+    showDashboard();
+  }
+}
 function routeHash(){
   var h=window.location.hash;
   if(h==='#dashboard') showDashboard();
