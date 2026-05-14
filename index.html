@@ -5751,5 +5751,15 @@ function toggleQB(btn){
   if(!wasOpen) item.classList.add('open');
 }
 </script>
+
+<!-- Memberstack test-mode install -->
+<script type="module">
+  import memberstackDOM from 'https://cdn.jsdelivr.net/npm/@memberstack/dom@latest/+esm';
+
+  const memberstack = memberstackDOM.init({
+    publicKey: "pk_sb_b090b30f6ecf589f710e",
+  });
+</script>
+
 </body>
 </html>
