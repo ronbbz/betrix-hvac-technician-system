@@ -1,0 +1,242 @@
+**`access.html`**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — Betrix HVAC Technician Business System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo">Betrix <span>Business Systems</span></div>
+    <div class="phase-nav-label">HVAC Technician Business System</div>
+    <div style="display:flex;align-items:center;gap:0">
+      <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">Dark</button>
+    </div>
+  </div>
+</nav>
+
+<!-- DASHBOARD -->
+<div id="dashboard" style="background:var(--gray-50);min-height:100vh;padding-top:60px">
+  <div class="dash-layout">
+
+    <!-- HEADER -->
+    <div class="dash-header">
+      <div class="dash-access-label">Member Access — HVAC Technician Business System</div>
+      <div class="dash-title">HVAC Technician<br>Business System</div>
+    </div>
+
+    <!-- START HERE -->
+    <div class="dash-panel">
+      <div class="dash-panel-label">Start Here</div>
+      <div class="dash-panel-title">Begin With Phase 1</div>
+      <div class="dash-panel-body">Welcome to the Betrix HVAC Technician Business System. This is your structured path from zero clarity to independent income. Start at Phase 1: Reality &amp; Fit — designed to give you an honest picture of the trade before you invest time or money. Move through the phases in order. Each one builds on the last.</div>
+      <a href="/phase-1" class="dash-start-cta">Enter Phase 1 →</a>
+    </div>
+
+    <!-- PHASE ROWS -->
+    <div class="dash-phases-grid">
+      <div class="dash-section-label">Core System — Phases 1–7</div>
+      <a href="/phase-1" class="dash-phase-row">
+        <div class="dash-phase-num">01</div>
+        <div>
+          <div class="dash-phase-name">Reality &amp; Fit</div>
+          <div class="dash-phase-sub">Honest assessment — what the trade actually looks like</div>
+        </div>
+        <div class="dash-phase-status building">Start Here</div>
+      </a>
+      <a href="/phase-2" class="dash-phase-row">
+        <div class="dash-phase-num">02</div>
+        <div>
+          <div class="dash-phase-name">Entry Path</div>
+          <div class="dash-phase-sub">Choose your path into the trade</div>
+        </div>
+        <div class="dash-phase-status next">Enter</div>
+      </a>
+      <a href="/phase-3" class="dash-phase-row">
+        <div class="dash-phase-num">03</div>
+        <div>
+          <div class="dash-phase-name">First Income Plan</div>
+          <div class="dash-phase-sub">What your first real income stage looks like</div>
+        </div>
+        <div class="dash-phase-status next">Enter</div>
+      </a>
+      <a href="/phase-4" class="dash-phase-row">
+        <div class="dash-phase-num">04</div>
+        <div>
+          <div class="dash-phase-name">Skill &amp; Stability</div>
+          <div class="dash-phase-sub">Build competence and financial footing</div>
+        </div>
+        <div class="dash-phase-status next">Enter</div>
+      </a>
+      <a href="/phase-5" class="dash-phase-row">
+        <div class="dash-phase-num">05</div>
+        <div>
+          <div class="dash-phase-name">Income Expansion</div>
+          <div class="dash-phase-sub">Expand beyond your base hourly rate</div>
+        </div>
+        <div class="dash-phase-status next">Enter</div>
+      </a>
+      <a href="/phase-6" class="dash-phase-row">
+        <div class="dash-phase-num">06</div>
+        <div>
+          <div class="dash-phase-name">Business Layer</div>
+          <div class="dash-phase-sub">Add structure for independent operation</div>
+        </div>
+        <div class="dash-phase-status next">Enter</div>
+      </a>
+      <a href="/phase-7" class="dash-phase-row">
+        <div class="dash-phase-num">07</div>
+        <div>
+          <div class="dash-phase-name">Scale Path</div>
+          <div class="dash-phase-sub">From independent operator to scalable income</div>
+        </div>
+        <div class="dash-phase-status next">Enter</div>
+      </a>
+    </div>
+
+    <!-- EXTENSION LAYER -->
+    <div class="dash-extension-grid">
+      <div class="dash-section-label">Extension Layer — Post-Core Readiness</div>
+      <a href="/phase-8" class="dash-phase-row">
+        <div class="dash-phase-num" style="font-size:10px;color:var(--gray-400);letter-spacing:0.05em">E1</div>
+        <div>
+          <div class="dash-phase-name">Business Readiness Gate</div>
+          <div class="dash-phase-sub">Test the business layer before risking income, savings, debt, customer trust, employer relationships, licensing exposure, or reputation.</div>
+        </div>
+        <div class="dash-phase-status extension">Extension</div>
+      </a>
+    </div>
+
+    <!-- THREE WIDGETS -->
+    <div class="dash-three-grid">
+
+      <!-- TOOLS -->
+      <div class="dash-widget">
+        <div class="dash-widget-label">Tools &amp; Templates</div>
+        <div class="dash-widget-title">Reference Tools</div>
+        <div class="dash-tool-list">
+          <div class="dash-tool-item">
+            Entry Evaluation Worksheet
+            <span class="dash-tool-tag">Phase 1</span>
+          </div>
+          <div class="dash-tool-item">
+            Training Cost Comparison
+            <span class="dash-tool-tag">Phase 2</span>
+          </div>
+          <div class="dash-tool-item">
+            First Income Stage Planner
+            <span class="dash-tool-tag">Phase 3</span>
+          </div>
+          <div class="dash-tool-item">
+            Job Offer Evaluation Guide
+            <span class="dash-tool-tag">Phase 4</span>
+          </div>
+          <div class="dash-tool-item" style="color:var(--gray-400);font-style:italic;border-style:dashed">
+            More tools added with phases
+            <span class="dash-tool-tag">—</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- UPDATES -->
+      <div class="dash-widget">
+        <div class="dash-widget-label">System Updates</div>
+        <div class="dash-widget-title">What's New</div>
+        <div>
+          <div class="dash-update-item">
+            <div class="dash-update-date">System Launch</div>
+            Full seven-phase structure, core tools, and readiness checklist are now available.
+          </div>
+          <div class="dash-update-item">
+            <div class="dash-update-date">Phase 7: Scale Path</div>
+            Phase 7: Scale Path is now available. Explore long-term specialization, systems, reputation, and compounding leverage.
+          </div>
+          <div class="dash-update-item">
+            <div class="dash-update-date">Core System Complete</div>
+            The seven-phase HVAC Technician Business System core path is complete. All phases are available.
+          </div>
+          <div class="dash-update-item">
+            <div class="dash-update-date">Extension Layer Added</div>
+            Phase 8: Business Readiness Gate is now staged as a post-core readiness layer for users evaluating independent work, capital risk, compliance, or a small controlled test.
+          </div>
+        </div>
+      </div>
+
+      <!-- CHECKLIST -->
+      <div class="dash-widget">
+        <div class="dash-widget-label">Readiness Checklist</div>
+        <div class="dash-widget-title">Before You Begin</div>
+        <div class="dash-checklist">
+          <div class="dash-check-item">
+            <div class="dash-check-box"></div>
+            <span>Reviewed the full seven-phase overview</span>
+          </div>
+          <div class="dash-check-item">
+            <div class="dash-check-box"></div>
+            <span>Read the Start Here instructions</span>
+          </div>
+          <div class="dash-check-item">
+            <div class="dash-check-box"></div>
+            <span>Completed Phase 1: Reality &amp; Fit</span>
+          </div>
+          <div class="dash-check-item">
+            <div class="dash-check-box"></div>
+            <span>Identified your entry path (Phase 2)</span>
+          </div>
+          <div class="dash-check-item">
+            <div class="dash-check-box"></div>
+            <span>Defined your first income target (Phase 3)</span>
+          </div>
+          <div class="dash-check-item">
+            <div class="dash-check-box"></div>
+            <span>Reached first stable income (Phase 4)</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /three-grid -->
+
+  </div><!-- /dash-layout -->
+
+  <!-- PROTECTED UTILITY FOOTER -->
+  <footer class="protected-utility-footer">
+    <div class="protected-utility-links">
+      <a href="/terms">Terms</a>
+      <a href="/privacy">Privacy</a>
+      <a href="/refund-policy">Refund Policy</a>
+      <a href="/digital-delivery">Digital Delivery</a>
+      <a href="/disclaimer">Disclaimer</a>
+      <a href="/support">Support</a>
+    </div>
+    <p class="protected-utility-note">Betrix Business Systems provides structured informational and execution guidance. This system does not provide legal, financial, tax, insurance, licensing, employment, or technical trade advice.</p>
+  </footer>
+
+</div><!-- /dashboard -->
+
+<script src="/assets/app.js" defer></script>
+
+<!-- Memberstack test-mode install -->
+<script type="module">
+  import memberstackDOM from 'https://cdn.jsdelivr.net/npm/@memberstack/dom@latest/+esm';
+  const memberstack = memberstackDOM.init({
+    publicKey: "pk_sb_b090b30f6ecf589f710e",
+  });
+</script>
+
+</body>
+</html>
+```
+
+---
+
+File 4 of 19 complete. Waiting for **NEXT FILE**.
