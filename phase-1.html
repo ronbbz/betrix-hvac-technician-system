@@ -1,0 +1,512 @@
+**`phase-1.html`**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phase 1 — Reality &amp; Fit | Betrix HVAC Technician Business System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body style="padding-top:60px">
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo">Betrix <span>Business Systems</span></div>
+    <div class="phase-nav-label">Phase 1 — Reality &amp; Fit</div>
+    <div style="display:flex;align-items:center;gap:0">
+      <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">Dark</button>
+      <a href="/access" class="nav-cta">← Dashboard</a>
+    </div>
+  </div>
+</nav>
+
+<div class="phase-layout">
+
+  <!-- PHASE HEADER -->
+  <div class="phase-header">
+    <div class="phase-eyebrow">Phase 1 of 7</div>
+    <h1 class="phase-title">Reality &amp; Fit</h1>
+    <div class="phase-objective">Understand the work before you commit to the path.</div>
+    <p class="phase-desc">This phase is not here to motivate you. It is here to help you decide if HVAC actually fits your real life. This is a digital business system — not HVAC training, not a certification program.</p>
+  </div>
+
+  <!-- OVERVIEW CARDS -->
+  <div class="overview-grid">
+    <div class="overview-card">
+      <div class="overview-card-label">What You Will Understand</div>
+      <div class="overview-card-title">The real picture of the trade</div>
+      <ul>
+        <li>What HVAC work actually looks like day-to-day</li>
+        <li>Residential vs commercial — what each lane means</li>
+        <li>Physical, environmental, and schedule demands</li>
+        <li>Why first income requires a ramp, not instant results</li>
+        <li>Where most people stall early and why</li>
+      </ul>
+    </div>
+    <div class="overview-card">
+      <div class="overview-card-label">Decisions You Will Make</div>
+      <div class="overview-card-title">Your fit and direction</div>
+      <ul>
+        <li>Whether HVAC fits your physical situation and schedule</li>
+        <li>Your current starting position in the trade</li>
+        <li>Whether your fit signal is strong, possible, or caution</li>
+        <li>What your next move is — research, compare, explore, or pause</li>
+        <li>Whether you are ready to move to Phase 2</li>
+      </ul>
+    </div>
+    <div class="overview-card">
+      <div class="overview-card-label">Before Moving Forward</div>
+      <div class="overview-card-title">What must be complete</div>
+      <ul>
+        <li>All core sections reviewed</li>
+        <li>Fit assessment completed honestly</li>
+        <li>Starting position identified</li>
+        <li>Next-move checkpoint answered</li>
+        <li>Phase 1 completion checklist confirmed</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ORIENTATION -->
+  <div class="phase-section-divider">Phase 1 Orientation</div>
+  <div class="phase-callout">
+    <p>This phase is not here to motivate you. It is here to help you decide if HVAC actually fits your real life.</p>
+    <p>If you are completely new to HVAC, read this phase in full. It is designed to show you the real work conditions before you compare schools, employers, certifications, or income paths.</p>
+    <p>If you already understand the physical reality of HVAC, use this phase as a checkpoint: confirm your fit, complete the fit assessment, choose your next move, and continue to Phase 2.</p>
+  </div>
+
+  <div class="phase-sections" style="margin-bottom:16px">
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">How to Use This Phase</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        The access page lets you work through each phase in order or jump to where you are today. Phase 1 sets the decision standard for the rest of the system.<br><br>
+        Most people stay stuck because they look at trades from the outside — income potential, job demand, school ads, Reddit threads, YouTube videos — but they do not stop to ask whether the day-to-day reality actually matches their personality, energy, body, schedule, and long-term goals. This phase is designed to remove false assumptions early.
+      </div>
+    </div>
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">Phase 1 Operating Standard</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        This is the trust phase of the system. The goal is not to sell you on HVAC. The goal is to help you make an honest decision before you spend money, commit time, or move into an entry path that does not fit your actual life.<br><br>
+        If HVAC is a bad fit for you, this phase should help you see that early. That is still a successful outcome. If HVAC is a strong or possible fit, this phase should help you move forward with more clarity instead of guessing through scattered information.<br><br>
+        This system does not try to replace official training, licensing, or real field experience. It organizes the decision path so you can understand what matters, what to verify, and what your next move should be.
+      </div>
+    </div>
+  </div>
+
+  <div class="phase-callout warning" style="margin-top:0">
+    <p>This system is not for someone looking for easy money, guaranteed income, instant certification, or a shortcut around the real work. It is for someone who wants to understand the HVAC path clearly before making a serious decision.</p>
+    <p>If you are only looking for the upside and do not want the reality, this phase should slow you down. If you are willing to evaluate the real path honestly, continue.</p>
+  </div>
+
+  <!-- CORE SECTIONS -->
+  <div class="phase-section-divider">Core Sections</div>
+  <div class="phase-sections">
+
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">What HVAC Actually Is</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        HVAC stands for heating, ventilation, and air conditioning. In the real world, this trade involves installing, maintaining, diagnosing, repairing, and replacing systems that control temperature, airflow, and comfort in homes, buildings, and commercial environments.<br><br>
+        This is skilled, hands-on work. It combines physical labor, problem-solving, mechanical understanding, electrical awareness, and customer-facing situations depending on the role. It is not desk work. It is not passive. It is not a fast-money shortcut. It is not something you understand fully from one video, one school ad, one Reddit thread, or one AI answer.<br><br>
+        Core work categories: <strong>Installation</strong> — setting new systems in place, connecting components, handling layout, ducting, and equipment setup. <strong>Service / Repair</strong> — diagnosing issues, troubleshooting failures, replacing parts, restoring operation. <strong>Maintenance</strong> — inspections, tune-ups, testing performance, preventing failures. In simple terms: HVAC is a trade that rewards people who can work physically, think practically, and stay calm while solving real-world problems.
+      </div>
+    </div>
+
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">Real Work Conditions</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        You need to understand the environment before you commit to the path. HVAC work can include indoor and outdoor job sites, attics, rooftops, crawlspaces, basements, and utility rooms. Expect hot, cold, dirty, cramped, or uncomfortable environments, variable schedules depending on season and employer, and physically active days with lifting, moving, climbing, and standing.<br><br>
+        Real HVAC environments may include summer attic service calls with intense heat, rooftop commercial units with weather exposure, crawlspace access in tight and dirty conditions, emergency calls with time pressure, and customer homes where professionalism matters as much as technical ability.<br><br>
+        <strong>If you are expecting comfort-first work, this is the wrong expectation.</strong> This field rewards people who can stay composed in imperfect environments.
+      </div>
+    </div>
+
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">Physical and Mental Demands</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        HVAC requires more than technical curiosity. Core demands include stamina, coordination with tools and equipment, attention to detail, problem-solving under pressure, and consistency in showing up, learning, and improving. You do not need to be perfect. You do need to be willing.<br><br>
+        <strong>This is not passive or low-effort work. This field favors people who can stay reliable, learn by doing, and keep moving when the work gets uncomfortable.</strong><br><br>
+        If you are switching careers from office-based or less physical work, do not underestimate the adjustment. The biggest surprises for career switchers are usually physical fatigue early on, slower confidence than expected, starting lower financially before earning leverage, and needing to learn through repetition, not just explanation. That does not make HVAC a bad fit. It just means the transition needs to be approached honestly.
+      </div>
+    </div>
+
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">Residential vs Commercial HVAC</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        This matters early because many people think "HVAC" is one lane. It is not.<br><br>
+        <strong>Residential</strong> usually means homes, apartments, and small residential properties. More direct customer interaction, faster-paced service and repair, a common entry point into the industry, and good for building experience quickly.<br><br>
+        <strong>Commercial</strong> usually means larger buildings, retail, offices, and industrial or institutional environments. Larger and more complex systems, more technical depth over time, and stronger long-term upside for many workers. A lane many people grow into after gaining experience.<br><br>
+        Most people start closer to residential exposure and build toward commercial opportunity over time. Commercial HVAC often carries stronger long-term earning potential because systems are more complex, employers value reliability and technical depth, and problem-solving value tends to rise with experience. <strong>You do not need to choose your forever lane today — but you should understand that the HVAC field has layers.</strong>
+      </div>
+    </div>
+
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">First Income Planning Reality</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        One of the biggest mistakes people make is assuming interest should produce income immediately. That is not how this works.<br><br>
+        A realistic early timeline may look like this: weeks one through four — understanding the trade, evaluating fit, getting clear on path. Months one through three — positioning yourself for entry, improving readiness, approaching opportunities. Months two through four — first income opportunity is possible, depending on local market conditions, effort, and demand in your area.<br><br>
+        Pay rates vary significantly by region, employer, role type, and local licensing requirements. Do not rely on national averages or online income claims as your personal baseline. Entry-level pay and what you can realistically expect will depend on your specific location and the opportunities available there.<br><br>
+        What can speed up entry: acting instead of endlessly researching, being open to entry-level work, showing reliability and willingness to learn, and targeting real employers instead of waiting for perfect conditions. What slows people down: overthinking, unrealistic income expectations, waiting until they "feel fully ready," and confusing information gathering with progress.<br><br>
+        <strong>There is a ramp. There is no instant income. The goal is realistic movement.</strong>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FAILURE MAP -->
+  <div class="phase-section-divider">Failure Map — Why People Stall Early</div>
+  <div style="border:1px solid var(--border);margin-bottom:0;overflow-x:auto">
+    <table class="failure-table">
+      <thead>
+        <tr>
+          <th>Failure Point</th>
+          <th>What It Looks Like</th>
+          <th>System Correction</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Comfort-first expectations</td><td>The work feels harder than expected</td><td>Understand real environments before committing</td></tr>
+        <tr><td>Endless research</td><td>Watching videos but taking no action</td><td>Use phases and checkpoints to move forward</td></tr>
+        <tr><td>School confusion</td><td>Not knowing which route makes sense</td><td>Compare trade school, apprenticeship, helper route, and direct entry in Phase 2</td></tr>
+        <tr><td>Fast-money thinking</td><td>Expecting income before the ramp</td><td>Use first income planning instead of fantasy timing</td></tr>
+        <tr><td>No physical readiness</td><td>Underestimating heat, cold, lifting, and jobsite discomfort</td><td>Evaluate fit honestly before spending money</td></tr>
+        <tr><td>No long-term view</td><td>Only thinking about the first job</td><td>Understand skill growth and operator potential early</td></tr>
+        <tr><td>Weak consistency</td><td>Starting strong but fading quickly</td><td>Build around reliability, repetition, and progression</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="phase-callout neutral" style="margin-top:16px">
+    <p>If you reach the end of this phase and still refuse to decide, you are already drifting. The correction is not more random information. The correction is a cleaner decision: move forward, compare routes, talk to real people, or pause honestly.</p>
+  </div>
+
+  <!-- WHO FITS -->
+  <div class="phase-section-divider">Who This Fits / Who This Does Not Fit</div>
+  <div class="who-fit-grid">
+    <div class="who-fit-card">
+      <div class="who-fit-label">This path fits people who are</div>
+      <ul class="who-fit-list">
+        <li>Comfortable working with their hands</li>
+        <li>Willing to build skill over time</li>
+        <li>Interested in stable, practical income</li>
+        <li>Willing to learn through action, not just theory</li>
+        <li>Capable of showing up consistently</li>
+        <li>Open to a path that can grow into stronger long-term income</li>
+      </ul>
+    </div>
+    <div class="who-fit-card dark-card">
+      <div class="who-fit-label">This path is likely a poor fit for people who</div>
+      <ul class="who-fit-list">
+        <li>Want passive or remote-first work</li>
+        <li>Avoid physical work conditions</li>
+        <li>Expect fast money without a ramp</li>
+        <li>Are unwilling to commit to progression</li>
+        <li>Want information without action</li>
+        <li>Expect ownership-level rewards before earning field-level experience</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SELECT STARTING POSITION -->
+  <div class="phase-section-divider">Select Your Starting Position</div>
+  <p style="font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:16px;max-width:580px">Read the options below and select the one that best reflects your real position right now. Do not choose based on pride. Choose based on reality.</p>
+  <div class="position-options" id="positionOpts">
+    <div class="position-opt" onclick="selectPosition(this)">
+      <div class="position-opt-title">Starting from Zero</div>
+      <div class="position-opt-desc">You have little or no direct experience and need a realistic path into the field from the beginning.</div>
+    </div>
+    <div class="position-opt" onclick="selectPosition(this)">
+      <div class="position-opt-title">Switching Careers</div>
+      <div class="position-opt-desc">You may have work experience, discipline, or transferable strengths, but HVAC itself is a new lane.</div>
+    </div>
+    <div class="position-opt" onclick="selectPosition(this)">
+      <div class="position-opt-title">Some Related Experience</div>
+      <div class="position-opt-desc">You have exposure to tools, trades, construction, mechanical work, maintenance, or adjacent environments and want to evaluate HVAC more strategically.</div>
+    </div>
+  </div>
+  <p style="font-size:12px;color:var(--gray-400);margin-top:10px">Your starting position changes how you should enter HVAC. Phase 2 works better when your starting point is clear.</p>
+
+  <!-- CONFIRM DIRECTION -->
+  <div class="phase-section-divider">Confirm Your Direction</div>
+  <p style="font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:16px;max-width:580px">Before moving forward, make a clean decision. Either answer is useful. What matters is honesty. Do not continue just because you want the upside. Continue only if you accept the path.</p>
+  <div class="direction-options">
+    <div class="direction-opt" onclick="selectDirection(this,'go')">
+      <div class="direction-opt-title">Continue</div>
+      <div class="direction-opt-body">HVAC is a path I am willing to explore further. I accept the real conditions and am ready to move to Phase 2.</div>
+    </div>
+    <div class="direction-opt" onclick="selectDirection(this,'pause')">
+      <div class="direction-opt-title">Pause</div>
+      <div class="direction-opt-body">HVAC is not aligned with my current situation. I need more time, a different path, or more honest evaluation first.</div>
+    </div>
+  </div>
+
+  <!-- FIT ASSESSMENT -->
+  <div class="phase-section-divider">Fit Assessment</div>
+  <p style="font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:4px;max-width:580px">Rate yourself honestly in each area. Score: <strong>2 = Strong fit</strong> &nbsp;·&nbsp; <strong>1 = Possible fit</strong> &nbsp;·&nbsp; <strong>0 = Caution zone</strong></p>
+  <p style="font-size:12px;color:var(--gray-400);margin-bottom:16px">Do not score based on pride. Score based on reality.</p>
+  <div class="decision-area" id="fitAssessment">
+    <div class="score-row"><div class="score-q">Am I willing to work in uncomfortable physical environments?</div><div class="score-btns"><button class="s-btn" onclick="scoreBtn(this,2)">2</button><button class="s-btn" onclick="scoreBtn(this,1)">1</button><button class="s-btn" onclick="scoreBtn(this,0)">0</button></div></div>
+    <div class="score-row"><div class="score-q">Am I willing to learn through repetition, not just explanation?</div><div class="score-btns"><button class="s-btn" onclick="scoreBtn(this,2)">2</button><button class="s-btn" onclick="scoreBtn(this,1)">1</button><button class="s-btn" onclick="scoreBtn(this,0)">0</button></div></div>
+    <div class="score-row"><div class="score-q">Can I handle a path where confidence builds over time?</div><div class="score-btns"><button class="s-btn" onclick="scoreBtn(this,2)">2</button><button class="s-btn" onclick="scoreBtn(this,1)">1</button><button class="s-btn" onclick="scoreBtn(this,0)">0</button></div></div>
+    <div class="score-row"><div class="score-q">Am I comfortable starting in an entry-level position if needed?</div><div class="score-btns"><button class="s-btn" onclick="scoreBtn(this,2)">2</button><button class="s-btn" onclick="scoreBtn(this,1)">1</button><button class="s-btn" onclick="scoreBtn(this,0)">0</button></div></div>
+    <div class="score-row"><div class="score-q">Am I willing to show up consistently while I am still learning?</div><div class="score-btns"><button class="s-btn" onclick="scoreBtn(this,2)">2</button><button class="s-btn" onclick="scoreBtn(this,1)">1</button><button class="s-btn" onclick="scoreBtn(this,0)">0</button></div></div>
+    <div class="score-row"><div class="score-q">Can I handle customer-facing or employer-facing expectations?</div><div class="score-btns"><button class="s-btn" onclick="scoreBtn(this,2)">2</button><button class="s-btn" onclick="scoreBtn(this,1)">1</button><button class="s-btn" onclick="scoreBtn(this,0)">0</button></div></div>
+    <div class="score-row"><div class="score-q">Am I interested in building a practical skill with long-term upside?</div><div class="score-btns"><button class="s-btn" onclick="scoreBtn(this,2)">2</button><button class="s-btn" onclick="scoreBtn(this,1)">1</button><button class="s-btn" onclick="scoreBtn(this,0)">0</button></div></div>
+    <div class="score-row"><div class="score-q">Can I accept that early progress may be slower than online content makes it look?</div><div class="score-btns"><button class="s-btn" onclick="scoreBtn(this,2)">2</button><button class="s-btn" onclick="scoreBtn(this,1)">1</button><button class="s-btn" onclick="scoreBtn(this,0)">0</button></div></div>
+    <div class="score-total-bar">
+      <div class="score-total-label">Current score</div>
+      <div class="score-total-val" id="fitScore">—</div>
+    </div>
+    <div class="score-interp" id="fitInterp"></div>
+  </div>
+
+  <!-- NEXT-MOVE CHECKPOINT -->
+  <div class="phase-section-divider">Next-Move Checkpoint</div>
+  <p style="font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:16px;max-width:580px">Based on what you now understand, choose your next move.</p>
+  <div class="nextmove-options">
+    <div class="nm-opt" onclick="selectNM(this)">
+      <div class="nm-opt-letter">A</div>
+      <div><div class="nm-opt-title">Research</div><div class="nm-opt-desc">You still need more basic clarity about the trade before comparing entry routes.</div></div>
+    </div>
+    <div class="nm-opt" onclick="selectNM(this)">
+      <div class="nm-opt-letter">B</div>
+      <div><div class="nm-opt-title">Route Comparison</div><div class="nm-opt-desc">You understand the work enough to compare trade school, apprenticeship, helper route, and direct entry.</div></div>
+    </div>
+    <div class="nm-opt" onclick="selectNM(this)">
+      <div class="nm-opt-letter">C</div>
+      <div><div class="nm-opt-title">Employer Exploration</div><div class="nm-opt-desc">You may be ready to look at entry roles, helper positions, or employer expectations in your area.</div></div>
+    </div>
+    <div class="nm-opt" onclick="selectNM(this)">
+      <div class="nm-opt-letter">D</div>
+      <div><div class="nm-opt-title">School Comparison</div><div class="nm-opt-desc">You may be ready to compare programs, costs, timelines, hands-on training, and job-placement support.</div></div>
+    </div>
+    <div class="nm-opt" onclick="selectNM(this)">
+      <div class="nm-opt-letter">E</div>
+      <div><div class="nm-opt-title">Pause</div><div class="nm-opt-desc">HVAC may not fit your current situation, or you need more time before committing. A pause is not failure. A false commitment is more expensive than an honest pause.</div></div>
+    </div>
+  </div>
+
+  <!-- 30-DAY WORKFLOW -->
+  <div class="phase-section-divider">30-Day Action Workflow</div>
+  <p style="font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:16px;max-width:580px">This workflow is not about becoming an HVAC technician in 30 days. It is about becoming clear enough to take the next correct step — moving from passive research into structured action.</p>
+  <div class="workflow-list">
+    <div class="wf-item">
+      <button class="wf-trigger" onclick="toggleWF(this)">
+        <div><div class="wf-trigger-label">Days 1–3</div><div class="wf-trigger-title">Reality Review</div></div>
+        <span class="wf-icon">+</span>
+      </button>
+      <div class="wf-body"><ul>
+        <li>Re-read the work conditions section</li>
+        <li>Write down what concerns you most</li>
+        <li>Identify whether the physical environment feels acceptable or questionable</li>
+      </ul></div>
+    </div>
+    <div class="wf-item">
+      <button class="wf-trigger" onclick="toggleWF(this)">
+        <div><div class="wf-trigger-label">Days 4–7</div><div class="wf-trigger-title">Starting Position</div></div>
+        <span class="wf-icon">+</span>
+      </button>
+      <div class="wf-body"><ul>
+        <li>Choose your current starting point: zero, career switcher, or related experience</li>
+        <li>Write down your timeline, budget, and availability</li>
+        <li>Decide whether you need speed, affordability, structure, or flexibility most</li>
+      </ul></div>
+    </div>
+    <div class="wf-item">
+      <button class="wf-trigger" onclick="toggleWF(this)">
+        <div><div class="wf-trigger-label">Days 8–14</div><div class="wf-trigger-title">Local Path Scan</div></div>
+        <span class="wf-icon">+</span>
+      </button>
+      <div class="wf-body"><ul>
+        <li>Search for local HVAC employers</li>
+        <li>Search for nearby trade schools or programs</li>
+        <li>Search for apprenticeship or helper opportunities if available</li>
+        <li>Write down 3–5 realistic next-step options</li>
+      </ul></div>
+    </div>
+    <div class="wf-item">
+      <button class="wf-trigger" onclick="toggleWF(this)">
+        <div><div class="wf-trigger-label">Days 15–21</div><div class="wf-trigger-title">Reality Conversations</div></div>
+        <span class="wf-icon">+</span>
+      </button>
+      <div class="wf-body"><ul>
+        <li>Try to speak with at least one HVAC technician, trade school representative, employer, apprenticeship contact, or someone working in a related trade</li>
+        <li>Ask direct questions — do not rely only on websites</li>
+        <li>Use these conversations to test reality, not to seek permission</li>
+        <li>The goal is to hear what the work is actually like and what separates people who stay from people who quit</li>
+      </ul></div>
+    </div>
+    <div class="wf-item">
+      <button class="wf-trigger" onclick="toggleWF(this)">
+        <div><div class="wf-trigger-label">Days 22–30</div><div class="wf-trigger-title">Decision Point</div></div>
+        <span class="wf-icon">+</span>
+      </button>
+      <div class="wf-body"><ul>
+        <li>Compare entry routes in Phase 2</li>
+        <li>Contact programs or employers</li>
+        <li>Gather more local licensing information</li>
+        <li>Pause and reassess if needed</li>
+        <li>The goal is not pressure — the goal is movement with clarity</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <!-- QUESTIONS BANK -->
+  <div class="phase-section-divider">Questions to Ask Before Committing</div>
+  <p style="font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:16px;max-width:580px">Use this section as a practical question bank before calling a school, speaking with an employer, or talking to someone already in the trade.</p>
+  <div class="q-bank">
+    <div class="qb-item">
+      <button class="qb-trigger" onclick="toggleQB(this)">
+        <span class="qb-trigger-text">Questions to Ask Yourself</span>
+        <span class="qb-icon">+</span>
+      </button>
+      <div class="qb-body"><ul>
+        <li>Am I willing to work in uncomfortable environments?</li>
+        <li>Am I prepared for an income ramp instead of instant income?</li>
+        <li>Do I want a job path only, or am I interested in long-term operator potential?</li>
+        <li>Am I willing to learn hands-on?</li>
+        <li>Can I stay consistent while I am still inexperienced?</li>
+      </ul></div>
+    </div>
+    <div class="qb-item">
+      <button class="qb-trigger" onclick="toggleQB(this)">
+        <span class="qb-trigger-text">Questions to Ask a School or Program</span>
+        <span class="qb-icon">+</span>
+      </button>
+      <div class="qb-body"><ul>
+        <li>Does the program include hands-on training?</li>
+        <li>Does it prepare students for relevant certification requirements?</li>
+        <li>What is the expected timeline and total cost?</li>
+        <li>Does the program offer job-placement support?</li>
+        <li>What types of employers hire graduates?</li>
+        <li>What should I verify with my state or local licensing authority?</li>
+      </ul></div>
+    </div>
+    <div class="qb-item">
+      <button class="qb-trigger" onclick="toggleQB(this)">
+        <span class="qb-trigger-text">Questions to Ask an Employer or Technician</span>
+        <span class="qb-icon">+</span>
+      </button>
+      <div class="qb-body"><ul>
+        <li>What do entry-level HVAC workers actually do first?</li>
+        <li>What makes someone valuable early?</li>
+        <li>What mistakes do new people make?</li>
+        <li>What tools or habits matter most?</li>
+        <li>What is realistic for the first 90 days?</li>
+        <li>What separates people who stay from people who quit?</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <!-- PHASE 1 CHECKLIST -->
+  <div class="phase-section-divider">Phase 1 Completion Checklist</div>
+  <p style="font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:4px;max-width:580px">Before moving to Phase 2, confirm the following. Do not treat this as decoration — this is the decision gate for the next phase.</p>
+  <p style="font-size:12px;color:var(--gray-400);margin-bottom:16px">If you skipped ahead because you already have trade exposure, come back to this checkpoint before making a larger commitment.</p>
+  <div class="phase-checklist-area">
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I understand that HVAC is physical, hands-on, and environment-dependent</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I understand that HVAC has residential and commercial lanes</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I understand that first income requires a ramp — not instant results</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I know my current starting position</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I have completed the fit assessment and identified my signal — strong, possible, or caution</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I know whether my next move is research, route comparison, employer exploration, school comparison, or pause</div>
+    </div>
+  </div>
+
+  <!-- PHASE 1 OUTCOME -->
+  <div class="phase-section-divider">Phase 1 Outcome</div>
+  <div class="phase-callout neutral">
+    <p>By the end of this phase, you should know what HVAC actually is, what the work environment really looks like, whether the trade fits your lifestyle and temperament, whether residential or commercial paths matter to you long-term, what realistic early timing looks like, and whether you are aligned enough to move to the next phase.</p>
+    <p>If HVAC still looks aligned after this phase, move forward now. Do not stay in research mode when the next step is already clear.</p>
+  </div>
+
+  <!-- SYSTEM UPDATE NOTE -->
+  <div class="phase-note">
+    <div class="phase-note-label">Phase 1 System Update Note</div>
+    <div class="phase-note-text">This system is designed to stay useful as requirements, industry conditions, and buyer questions evolve. Phase 1 will be reviewed during system update passes. Updates are added when certification awareness, entry-path expectations, industry conditions, or user decision points materially change. All updates are included with your access.</div>
+  </div>
+
+  <!-- COMPLETION GATE -->
+  <div class="completion-gate" style="margin-top:32px">
+    <div class="section-label" style="margin-bottom:16px;text-align:center">Phase 1 Complete</div>
+    <p class="completion-statement">"I understand what HVAC actually requires. I know my path type, I have realistic income expectations, and I am ready to choose an entry strategy."</p>
+    <p style="font-size:13px;color:var(--gray-400);margin-bottom:28px;text-align:center">When you are ready, the next step is <strong style="color:var(--black)">Phase 2: Entry Path</strong> — where you compare trade school, apprenticeship, helper route, and direct entry based on your situation.</p>
+    <div class="completion-actions">
+      <a href="/access" class="btn-outline">← Return to Dashboard</a>
+      <a href="/phase-2" class="btn-primary" style="font-size:13px;padding:13px 28px">Next: Phase 2 — Entry Path →</a>
+    </div>
+  </div>
+
+  <!-- PROTECTED UTILITY FOOTER -->
+  <footer class="protected-utility-footer">
+    <div class="protected-utility-links">
+      <a href="/terms">Terms</a>
+      <a href="/privacy">Privacy</a>
+      <a href="/refund-policy">Refund Policy</a>
+      <a href="/digital-delivery">Digital Delivery</a>
+      <a href="/disclaimer">Disclaimer</a>
+      <a href="/support">Support</a>
+    </div>
+    <p class="protected-utility-note">Betrix Business Systems provides structured informational and execution guidance. This system does not provide legal, financial, tax, insurance, licensing, employment, or technical trade advice.</p>
+  </footer>
+
+</div><!-- /phase-layout -->
+
+<script src="/assets/app.js" defer></script>
+
+<!-- Memberstack test-mode install -->
+<script type="module">
+  import memberstackDOM from 'https://cdn.jsdelivr.net/npm/@memberstack/dom@latest/+esm';
+  const memberstack = memberstackDOM.init({
+    publicKey: "pk_sb_b090b30f6ecf589f710e",
+  });
+</script>
+
+</body>
+</html>
+```
+
+---
+
+File 5 of 19 complete. Waiting for **NEXT FILE**.
