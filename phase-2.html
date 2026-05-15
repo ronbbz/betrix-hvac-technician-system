@@ -1,0 +1,443 @@
+**`phase-2.html`**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phase 2 — Entry Path | Betrix HVAC Technician Business System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body style="padding-top:60px">
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo">Betrix <span>Business Systems</span></div>
+    <div class="phase-nav-label">Phase 2 — Entry Path</div>
+    <div style="display:flex;align-items:center;gap:0">
+      <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">Dark</button>
+      <a href="/access" class="nav-cta">← Dashboard</a>
+    </div>
+  </div>
+</nav>
+
+<div class="phase-layout">
+
+  <!-- PHASE HEADER -->
+  <div class="phase-header">
+    <div class="phase-eyebrow">Phase 2 of 7</div>
+    <h1 class="phase-title">Entry Path</h1>
+    <div class="phase-objective">Identify the most realistic way for you to enter HVAC.</div>
+    <p class="phase-desc">This phase is not about collecting more information. It is about choosing the most realistic path into the field based on your current situation. Digital system. Not HVAC training. Not a certification program.</p>
+  </div>
+
+  <!-- OVERVIEW CARDS -->
+  <div class="overview-grid">
+    <div class="overview-card">
+      <div class="overview-card-label">What You Will Understand</div>
+      <div class="overview-card-title">The three real entry paths</div>
+      <ul>
+        <li>Direct-to-Work, Trade School, and Hybrid — what each actually means</li>
+        <li>What each path requires in time, cost, and structure</li>
+        <li>Speed vs cost vs confidence tradeoffs</li>
+        <li>What you need at the entry stage — and what you do not need yet</li>
+        <li>General time and cost planning ranges for each route</li>
+      </ul>
+    </div>
+    <div class="overview-card">
+      <div class="overview-card-label">Decisions You Will Make</div>
+      <div class="overview-card-title">Your entry route</div>
+      <ul>
+        <li>Which path fits your timeline, budget, and learning style</li>
+        <li>Whether speed, cost, structure, or flexibility matters most</li>
+        <li>Your entry path scorecard results</li>
+        <li>One chosen route before moving to Phase 3</li>
+        <li>The next question you need answered before taking action</li>
+      </ul>
+    </div>
+    <div class="overview-card">
+      <div class="overview-card-label">Before Moving Forward</div>
+      <div class="overview-card-title">What must be complete</div>
+      <ul>
+        <li>All core sections reviewed</li>
+        <li>Entry path scorecard completed</li>
+        <li>Entry path selected</li>
+        <li>Completion checklist confirmed</li>
+        <li>A path chosen — not just compared</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ORIENTATION -->
+  <div class="phase-section-divider">Phase 2 Orientation</div>
+  <div class="phase-callout">
+    <p>Use Phase 2 as an entry-path decision system. If you are new to HVAC, read the full phase and compare each path carefully. Your goal is to understand which route fits your timeline, budget, learning style, and first-income objective.</p>
+    <p>If you already have trade exposure, use this phase as a route-confirmation checkpoint. Do not assume the fastest path is automatically the smartest path. Confirm what you need, what you do not need yet, and which route you are actually willing to execute.</p>
+  </div>
+
+  <div class="phase-sections" style="margin-bottom:16px">
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">How to Use This Phase</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">By the end of this phase, you should know how you are entering HVAC, what that path requires, what it does not require yet, and what your next move should be.<br><br>Not every HVAC entry path leads to the same outcome. The three most practical starting routes each have different speed, cost, flexibility, and practical fit. This phase helps you compare them so you can choose the one that fits your timeline, budget, learning style, risk tolerance, and first-income objective.</div>
+    </div>
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">Phase 2 Operating Standard</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">The goal is not to pick the path that sounds most impressive. The goal is to pick the path you can actually execute.<br><br>A wrong entry path can cost time, money, confidence, and momentum. A realistic entry path gives you a cleaner first move and a better chance of staying consistent.<br><br><strong>Decision logic: do not choose based on hype, pride, or fear. Choose based on fit, speed, cost, structure, and action probability.</strong></div>
+    </div>
+  </div>
+
+  <div class="phase-callout warning" style="margin-top:0">
+    <p>This phase is complete only when a path is chosen. The correction is not more tabs open. The correction is a route decision.</p>
+  </div>
+
+  <!-- CORE SECTIONS -->
+  <div class="phase-section-divider">Core Sections</div>
+  <div class="phase-sections">
+
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">The Three Real Entry Paths</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        Most people enter HVAC through one of three paths.<br><br>
+        <strong>1. Direct-to-Work</strong> — You approach companies directly, apply for entry-level roles, and learn in the field while earning. Best for people who want income sooner, are open to learning on the job, and can handle uncertainty early. Fastest route to field exposure, real-world learning starts immediately, lower upfront cost. Tradeoff: less structured early learning, depends heavily on employer quality.<br><br>
+        <strong>2. Trade School / Program</strong> — You start with structured training first, then use that foundation to enter the field. Best for people who want more structure before entering and learn better in guided environments. Stronger early foundation, can increase confidence. Tradeoff: delays income, quality and value vary significantly by program.<br><br>
+        <strong>3. Hybrid Path</strong> — You combine light training or certification prep with direct outreach and job positioning. Best for people who want some structure without delaying entry too long. Balances learning and action, often creates the best real-world momentum. Tradeoff: requires self-discipline.<br><br>
+        <strong>There is no single best path for everyone. The right path depends on your timeline, finances, confidence, local options, learning style, and willingness to learn by doing.</strong>
+      </div>
+    </div>
+
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">What Entry Actually Requires</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        You do not need everything figured out before entering HVAC.<br><br>
+        What you do need: a realistic understanding of the work, willingness to start at the beginning, ability to show reliability, a decision on how you are entering, and readiness to take action instead of staying in research mode.<br><br>
+        What you do not need yet: a truck, a full business setup, a huge tool inventory, perfect technical mastery, or ownership-level plans before field experience.<br><br>
+        <strong>Most people delay entry because they think they need more than they actually need.</strong> Starting lean is often an advantage because it forces movement instead of perfectionism. You need clarity on your entry path, realistic expectations, basic work readiness, and willingness to start smaller than your long-term vision.
+      </div>
+    </div>
+
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">Time to Entry vs Time to First Income</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        Different entry paths create different timelines.<br><br>
+        <strong>Direct-to-Work</strong> — shortest path to action, fastest possible route to first income, best for people who value momentum over perfect preparation.<br><br>
+        <strong>Trade School / Program</strong> — slower path to field income, stronger structure first, better for people who truly need that structure to act.<br><br>
+        <strong>Hybrid Path</strong> — balanced route, often strong for people who need just enough structure to move, reduces the risk of waiting too long or entering blindly.<br><br>
+        What speeds entry up: choosing one path and committing to it, acting before you feel perfect, being open to entry-level roles, focusing on momentum instead of identity. What slows entry down: endless comparison between options, waiting for ideal timing, overvaluing credentials too early, trying to plan the owner path before the worker path.<br><br>
+        <strong>Speed matters — but only if the path is realistic for you.</strong>
+      </div>
+    </div>
+
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">Certifications and Awareness at This Stage</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        At the entry level, the goal is awareness — not overwhelm. You should understand that HVAC can involve certifications or requirements depending on the role and location. One of the best-known examples is EPA certification for certain refrigerant-related work.<br><br>
+        You do not need to turn this phase into a legal research project. You do need to understand that requirements vary, employers vary, some certifications matter sooner than others, and local verification matters later in the process.<br><br>
+        Some people stall because they assume they must understand every licensing rule before taking a first step. The better approach: know that requirements exist, know that some roles require certifications sooner than others, and verify what applies when your path becomes more concrete. <strong>Use this phase to stay aware, not to get stuck.</strong>
+      </div>
+    </div>
+
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">Training Time and Cost Reality Check</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        Entry decisions usually involve money, time, and risk. Understanding general planning ranges before committing to a school, program, apprenticeship, or certification path helps you compare options more clearly.<br><br>
+        Costs and timelines vary significantly by school, program, location, tools, fees, employer expectations, certification path, and local requirements. Common planning reference ranges include:<br><br>
+        <strong>EPA certification prep only</strong> — often far less expensive; one exam alone does not automatically make someone fully job-ready.<br><br>
+        <strong>Short certificate program</strong> — often in the range of several months, with costs varying considerably by school and location.<br><br>
+        <strong>Trade school or technical college</strong> — often longer, with costs that can range from a few thousand dollars to significantly more depending on the program.<br><br>
+        <strong>Apprenticeship</strong> — often the longest path, sometimes several years, but may allow earning while learning.<br><br>
+        These are planning ranges only — not promises, guarantees, or official requirements. <strong>Always verify local requirements, employer expectations, school costs, certification requirements, and licensing rules through official sources in your area.</strong>
+      </div>
+    </div>
+
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">The Fastest Realistic Entry Path</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        For most people, the fastest realistic path is not perfect school selection. It is: <strong>pick a lane, position yourself properly, and move toward the field.</strong><br><br>
+        That usually means some combination of direct company outreach, realistic self-positioning, selective training where useful, and action before over-preparation.<br><br>
+        Many people choose the path that sounds better socially instead of the path they will actually follow through on. That usually leads to delay. The strongest path is the one that produces movement, not the one that looks best on paper.<br><br>
+        <strong>The longer you stay undecided, the more expensive the delay becomes.</strong>
+      </div>
+    </div>
+
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">Which Entry Path Fits You Best</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        <strong>Best fit for Direct-to-Work:</strong> you want income soon, you are comfortable learning while working, you can tolerate imperfect early conditions, you want momentum more than structure.<br><br>
+        <strong>Best fit for Trade School / Program:</strong> you genuinely need structure to move, you learn better with formal guidance, you are willing to delay entry in exchange for confidence, you have the financial room to do it intentionally.<br><br>
+        <strong>Best fit for Hybrid Path:</strong> you want a middle ground, you need some structure but not a full delay, you want to start moving while building confidence.<br><br>
+        <strong>Choose based on what you will execute, not what sounds ideal.</strong>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FAILURE MAP -->
+  <div class="phase-section-divider">Failure Map — Why People Stall in Phase 2</div>
+  <div style="border:1px solid var(--border);margin-bottom:0;overflow-x:auto">
+    <table class="failure-table">
+      <thead>
+        <tr><th>Failure Point</th><th>What It Looks Like</th><th>System Correction</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Choosing no path</td><td>You keep researching schools, jobs, and videos without deciding how you will enter</td><td>Pick Direct-to-Work, Trade School, or Hybrid as your current route</td></tr>
+        <tr><td>Overvaluing school</td><td>You assume school is always required before any action</td><td>Compare school against direct employer outreach and hybrid movement</td></tr>
+        <tr><td>Undervaluing direct entry</td><td>You ignore helper or entry roles because they feel too basic</td><td>Field exposure can be a real asset if the role is legitimate</td></tr>
+        <tr><td>Solving ownership too early</td><td>You start thinking about trucks, tools, and business before entry</td><td>Focus on entry first — operator planning comes later</td></tr>
+        <tr><td>Credential confusion</td><td>You get stuck trying to understand every certification and licensing detail at once</td><td>Stay aware, then verify specific requirements when your route becomes concrete</td></tr>
+        <tr><td>False confidence</td><td>You choose a path because it sounds good, not because you will follow through</td><td>Choose based on execution probability</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="phase-callout neutral" style="margin-top:16px">
+    <p>This phase is complete only when a path is chosen. The correction is not more tabs open. The correction is a route decision.</p>
+  </div>
+
+  <!-- ENTRY PATH SCORECARD -->
+  <div class="phase-section-divider">Entry Path Scorecard</div>
+  <p style="font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:4px;max-width:580px">Rate each path against the five factors below. Score: <strong>2 = strong fit</strong> &nbsp;·&nbsp; <strong>1 = possible fit</strong> &nbsp;·&nbsp; <strong>0 = poor fit</strong></p>
+  <p style="font-size:12px;color:var(--gray-400);margin-bottom:16px">The highest score is not always automatically the answer, but it should tell you which path deserves the most serious attention.</p>
+  <div class="p2-scorecard" id="p2Scorecard">
+    <div class="p2-sc-header">
+      <div class="p2-sc-header-cell">Factor</div>
+      <div class="p2-sc-header-cell">Direct-to-Work</div>
+      <div class="p2-sc-header-cell">Trade School</div>
+      <div class="p2-sc-header-cell">Hybrid</div>
+    </div>
+    <div class="p2-sc-row" data-row="0">
+      <div class="p2-sc-factor">Speed to field exposure</div>
+      <div class="p2-sc-cell"><button class="s-btn" onclick="p2Score(this,0,0,2)">2</button><button class="s-btn" onclick="p2Score(this,0,0,1)">1</button><button class="s-btn" onclick="p2Score(this,0,0,0)">0</button></div>
+      <div class="p2-sc-cell"><button class="s-btn" onclick="p2Score(this,0,1,2)">2</button><button class="s-btn" onclick="p2Score(this,0,1,1)">1</button><button class="s-btn" onclick="p2Score(this,0,1,0)">0</button></div>
+      <div class="p2-sc-cell"><button class="s-btn" onclick="p2Score(this,0,2,2)">2</button><button class="s-btn" onclick="p2Score(this,0,2,1)">1</button><button class="s-btn" onclick="p2Score(this,0,2,0)">0</button></div>
+    </div>
+    <div class="p2-sc-row" data-row="1">
+      <div class="p2-sc-factor">Affordability</div>
+      <div class="p2-sc-cell"><button class="s-btn" onclick="p2Score(this,1,0,2)">2</button><button class="s-btn" onclick="p2Score(this,1,0,1)">1</button><button class="s-btn" onclick="p2Score(this,1,0,0)">0</button></div>
+      <div class="p2-sc-cell"><button class="s-btn" onclick="p2Score(this,1,1,2)">2</button><button class="s-btn" onclick="p2Score(this,1,1,1)">1</button><button class="s-btn" onclick="p2Score(this,1,1,0)">0</button></div>
+      <div class="p2-sc-cell"><button class="s-btn" onclick="p2Score(this,1,2,2)">2</button><button class="s-btn" onclick="p2Score(this,1,2,1)">1</button><button class="s-btn" onclick="p2Score(this,1,2,0)">0</button></div>
+    </div>
+    <div class="p2-sc-row" data-row="2">
+      <div class="p2-sc-factor">Structure and learning support</div>
+      <div class="p2-sc-cell"><button class="s-btn" onclick="p2Score(this,2,0,2)">2</button><button class="s-btn" onclick="p2Score(this,2,0,1)">1</button><button class="s-btn" onclick="p2Score(this,2,0,0)">0</button></div>
+      <div class="p2-sc-cell"><button class="s-btn" onclick="p2Score(this,2,1,2)">2</button><button class="s-btn" onclick="p2Score(this,2,1,1)">1</button><button class="s-btn" onclick="p2Score(this,2,1,0)">0</button></div>
+      <div class="p2-sc-cell"><button class="s-btn" onclick="p2Score(this,2,2,2)">2</button><button class="s-btn" onclick="p2Score(this,2,2,1)">1</button><button class="s-btn" onclick="p2Score(this,2,2,0)">0</button></div>
+    </div>
+    <div class="p2-sc-row" data-row="3">
+      <div class="p2-sc-factor">Confidence to take action</div>
+      <div class="p2-sc-cell"><button class="s-btn" onclick="p2Score(this,3,0,2)">2</button><button class="s-btn" onclick="p2Score(this,3,0,1)">1</button><button class="s-btn" onclick="p2Score(this,3,0,0)">0</button></div>
+      <div class="p2-sc-cell"><button class="s-btn" onclick="p2Score(this,3,1,2)">2</button><button class="s-btn" onclick="p2Score(this,3,1,1)">1</button><button class="s-btn" onclick="p2Score(this,3,1,0)">0</button></div>
+      <div class="p2-sc-cell"><button class="s-btn" onclick="p2Score(this,3,2,2)">2</button><button class="s-btn" onclick="p2Score(this,3,2,1)">1</button><button class="s-btn" onclick="p2Score(this,3,2,0)">0</button></div>
+    </div>
+    <div class="p2-sc-row" data-row="4">
+      <div class="p2-sc-factor">Fit with schedule and life situation</div>
+      <div class="p2-sc-cell"><button class="s-btn" onclick="p2Score(this,4,0,2)">2</button><button class="s-btn" onclick="p2Score(this,4,0,1)">1</button><button class="s-btn" onclick="p2Score(this,4,0,0)">0</button></div>
+      <div class="p2-sc-cell"><button class="s-btn" onclick="p2Score(this,4,1,2)">2</button><button class="s-btn" onclick="p2Score(this,4,1,1)">1</button><button class="s-btn" onclick="p2Score(this,4,1,0)">0</button></div>
+      <div class="p2-sc-cell"><button class="s-btn" onclick="p2Score(this,4,2,2)">2</button><button class="s-btn" onclick="p2Score(this,4,2,1)">1</button><button class="s-btn" onclick="p2Score(this,4,2,0)">0</button></div>
+    </div>
+    <div class="p2-sc-totals">
+      <div class="p2-sc-total-label">Total</div>
+      <div class="p2-sc-total-val" id="p2t0">—</div>
+      <div class="p2-sc-total-val" id="p2t1">—</div>
+      <div class="p2-sc-total-val" id="p2t2">—</div>
+    </div>
+    <div class="p2-sc-interp" id="p2Interp"></div>
+  </div>
+
+  <!-- ENTRY PATH SELECTOR -->
+  <div class="phase-section-divider">Select Your Entry Path</div>
+  <p style="font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:4px;max-width:580px">Choose the path you are willing to act on — not the one you merely admire.</p>
+  <p style="font-size:12px;color:var(--gray-400);margin-bottom:16px">If you cannot choose a path yet, do not pretend the phase is complete. Revisit the scorecard, ask reality-based questions, or speak with a real school, employer, or technician.</p>
+  <div class="position-options" id="p2PathOpts">
+    <div class="position-opt" onclick="selectP2Path(this)">
+      <div class="position-opt-title">Option A — Direct-to-Work</div>
+      <div class="position-opt-desc">I want the fastest realistic route into HVAC and I am willing to learn by doing.</div>
+    </div>
+    <div class="position-opt" onclick="selectP2Path(this)">
+      <div class="position-opt-title">Option B — Trade School / Program</div>
+      <div class="position-opt-desc">I want a more structured foundation before entering the field.</div>
+    </div>
+    <div class="position-opt" onclick="selectP2Path(this)">
+      <div class="position-opt-title">Option C — Hybrid Path</div>
+      <div class="position-opt-desc">I want to combine selective learning with direct movement toward the field.</div>
+    </div>
+  </div>
+  <div style="border:1px solid var(--border);padding:20px 24px;margin-top:0;background:var(--gray-50)">
+    <div style="font-family:var(--font-head);font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--gray-400);margin-bottom:8px">Complete This Statement</div>
+    <p id="p2PathStatement" style="font-size:15px;color:var(--gray-400);font-weight:500;font-style:italic;margin:0">Select an entry path above to generate your current path statement.</p>
+    <div style="font-size:12px;color:var(--gray-400);margin-top:6px">If you cannot complete that sentence clearly, you are not done with this phase.</div>
+  </div>
+
+  <!-- QUESTIONS BANK -->
+  <div class="phase-section-divider">Questions to Ask Before Choosing a Path</div>
+  <p style="font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:16px;max-width:580px">Use this question bank before contacting a school, speaking with an employer, or comparing apprenticeship options.</p>
+  <div class="q-bank">
+    <div class="qb-item">
+      <button class="qb-trigger" onclick="toggleQB(this)">
+        <span class="qb-trigger-text">Questions to Ask Yourself</span>
+        <span class="qb-icon">+</span>
+      </button>
+      <div class="qb-body"><ul>
+        <li>Do I need structure before I act, or do I learn better by doing?</li>
+        <li>Do I need income sooner, or can I delay income for training?</li>
+        <li>What can I realistically afford without creating pressure I cannot handle?</li>
+        <li>Do I want the fastest route, the safest route, or the most structured route?</li>
+        <li>Am I choosing this path because it fits me, or because it sounds better to other people?</li>
+      </ul></div>
+    </div>
+    <div class="qb-item">
+      <button class="qb-trigger" onclick="toggleQB(this)">
+        <span class="qb-trigger-text">Questions to Ask a Trade School or Program</span>
+        <span class="qb-icon">+</span>
+      </button>
+      <div class="qb-body"><ul>
+        <li>What is the full cost, including fees, tools, books, and testing?</li>
+        <li>What hands-on training is included?</li>
+        <li>What certifications or exams does the program prepare students for?</li>
+        <li>What is the completion timeline?</li>
+        <li>What percentage of students get HVAC-related jobs after completion?</li>
+        <li>Which employers hire from this program?</li>
+        <li>What should I verify with my state or local licensing authority?</li>
+      </ul></div>
+    </div>
+    <div class="qb-item">
+      <button class="qb-trigger" onclick="toggleQB(this)">
+        <span class="qb-trigger-text">Questions to Ask an Employer</span>
+        <span class="qb-icon">+</span>
+      </button>
+      <div class="qb-body"><ul>
+        <li>Do you hire entry-level helpers or trainees?</li>
+        <li>What does a new person usually do in the first 30–90 days?</li>
+        <li>What makes someone stand out early?</li>
+        <li>Are there certifications or requirements I should prioritize before applying?</li>
+        <li>Do you train internally or prefer school or program graduates?</li>
+        <li>What early mistakes cause new people to struggle or lose momentum in the first 30–90 days?</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <!-- COMPLETION CHECKLIST -->
+  <div class="phase-section-divider">Phase 2 Completion Checklist</div>
+  <p style="font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:4px;max-width:580px">Before moving to Phase 3, confirm the following. If you cannot choose a path yet, do not pretend the phase is complete.</p>
+  <p style="font-size:12px;color:var(--gray-400);margin-bottom:16px">Revisit the scorecard, ask reality-based questions, or speak with a real school, employer, technician, or apprenticeship contact.</p>
+  <div class="phase-checklist-area">
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I understand the three main entry paths into HVAC</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I know the difference between Direct-to-Work, Trade School / Program, and Hybrid</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I understand what I need at the entry stage</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I understand what I do not need yet</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I know whether speed, cost, structure, or flexibility matters most for my situation</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I understand that general time and cost planning ranges vary by location, school, program, and employer</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I have chosen one current entry path</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I know what question I need answered next before taking action</div>
+    </div>
+  </div>
+
+  <!-- PHASE 2 OUTCOME -->
+  <div class="phase-section-divider">Phase 2 Outcome</div>
+  <div class="phase-callout neutral">
+    <p>By the end of this phase, you should know the three real entry paths into HVAC, which one fits your timeline and readiness, what you actually need to start, what you do not need yet, why speed matters but only when matched with realism, and what your next move should be.</p>
+    <p>If you still have not chosen a path, this phase is not complete. Choose the path you can actually act on now. Once that decision is clear, move forward without reopening every option.</p>
+  </div>
+
+  <!-- SYSTEM UPDATE NOTE -->
+  <div class="phase-note">
+    <div class="phase-note-label">Phase 2 System Update Note</div>
+    <div class="phase-note-text">This phase should stay aligned with real entry-path conditions. Future update passes may refine this phase if school models, apprenticeship access, employer expectations, certification timing, or common entry-path risks materially change. All updates are included with your access.</div>
+  </div>
+
+  <!-- COMPLETION GATE -->
+  <div class="completion-gate" style="margin-top:32px">
+    <div class="section-label" style="margin-bottom:16px;text-align:center">Phase 2 Complete</div>
+    <p class="completion-statement">"I know how I am entering HVAC, what that path requires, and what my next move is."</p>
+    <p style="font-size:13px;color:var(--gray-400);margin-bottom:28px;text-align:center">When you are ready, the next step is <strong style="color:var(--black)">Phase 3: First Income Plan</strong> — where you stop thinking about entry in theory and start positioning for your first real HVAC income opportunity.</p>
+    <div class="completion-actions">
+      <a href="/access" class="btn-outline">← Return to Dashboard</a>
+      <a href="/phase-3" class="btn-primary" style="font-size:13px;padding:13px 28px">Next: Phase 3 — First Income Plan →</a>
+    </div>
+  </div>
+
+  <!-- PROTECTED UTILITY FOOTER -->
+  <footer class="protected-utility-footer">
+    <div class="protected-utility-links">
+      <a href="/terms">Terms</a>
+      <a href="/privacy">Privacy</a>
+      <a href="/refund-policy">Refund Policy</a>
+      <a href="/digital-delivery">Digital Delivery</a>
+      <a href="/disclaimer">Disclaimer</a>
+      <a href="/support">Support</a>
+    </div>
+    <p class="protected-utility-note">Betrix Business Systems provides structured informational and execution guidance. This system does not provide legal, financial, tax, insurance, licensing, employment, or technical trade advice.</p>
+  </footer>
+
+</div><!-- /phase-layout -->
+
+<script src="/assets/app.js" defer></script>
+
+<!-- Memberstack test-mode install -->
+<script type="module">
+  import memberstackDOM from 'https://cdn.jsdelivr.net/npm/@memberstack/dom@latest/+esm';
+  const memberstack = memberstackDOM.init({
+    publicKey: "pk_sb_b090b30f6ecf589f710e",
+  });
+</script>
+
+</body>
+</html>
+```
+
+---
+
+File 6 of 19 complete. Waiting for **NEXT FILE**.

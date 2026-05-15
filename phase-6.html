@@ -1,0 +1,504 @@
+**`phase-6.html`**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phase 6 — Business Layer | Betrix HVAC Technician Business System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body style="padding-top:60px">
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo">Betrix <span>Business Systems</span></div>
+    <div class="phase-nav-label">Phase 6 — Business Layer</div>
+    <div style="display:flex;align-items:center;gap:0">
+      <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">Dark</button>
+      <a href="/access" class="nav-cta">← Dashboard</a>
+    </div>
+  </div>
+</nav>
+
+<div class="phase-layout">
+
+  <!-- PHASE HEADER -->
+  <div class="phase-header">
+    <div class="phase-eyebrow">Phase 6 of 7</div>
+    <h1 class="phase-title">Business Layer</h1>
+    <div class="phase-objective">Understand how HVAC begins to transition from worker income into controlled independent income and ownership awareness.</div>
+    <p class="phase-desc">This phase is not about telling you to start a business too early. It is about helping you understand when the business layer becomes real — and when it does not. Digital system. Not HVAC training. Not a certification program.</p>
+  </div>
+
+  <!-- OVERVIEW CARDS -->
+  <div class="overview-grid">
+    <div class="overview-card">
+      <div class="overview-card-label">What You Will Understand</div>
+      <div class="overview-card-title">What the business layer actually means</div>
+      <ul>
+        <li>What the business layer actually means in HVAC</li>
+        <li>The difference between worker thinking and operator thinking</li>
+        <li>Why ownership thinking too early can be destructive</li>
+        <li>When independent work becomes realistic</li>
+        <li>What must exist before business moves become responsible</li>
+      </ul>
+    </div>
+    <div class="overview-card">
+      <div class="overview-card-label">Decisions You Will Make</div>
+      <div class="overview-card-title">Your business-layer awareness</div>
+      <ul>
+        <li>How to separate responsible preparation from premature action</li>
+        <li>Your business-layer readiness scorecard results</li>
+        <li>Which business-layer area needs the most attention</li>
+        <li>Your current awareness focus sentence</li>
+        <li>Whether your next move should be competence, requirements, or observation</li>
+      </ul>
+    </div>
+    <div class="overview-card">
+      <div class="overview-card-label">Before Moving Forward</div>
+      <div class="overview-card-title">What must be complete</div>
+      <ul>
+        <li>All core sections reviewed</li>
+        <li>Scorecard completed honestly</li>
+        <li>Strategy builder selections made</li>
+        <li>Business layer tracker reviewed</li>
+        <li>Completion checklist confirmed</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ORIENTATION -->
+  <div class="phase-section-divider">Phase 6 Orientation</div>
+  <div class="phase-callout">
+    <p><strong>Before You Continue: This phase is not about telling you to start a business too early. It is about helping you understand when the business layer becomes real — and when it does not.</strong></p>
+    <p>Phase 5 explored income expansion. Phase 6 shows how income can eventually widen into independent responsibility, customer trust, operating systems, and ownership awareness. By this point, you should already understand fit, entry, first income, stability, and income expansion. Phase 6 is where the system widens your perspective.</p>
+    <p>The question is no longer only: how do I earn more as a worker? It becomes: when does HVAC begin to open independent income, operator thinking, and ownership awareness?</p>
+  </div>
+
+  <div class="phase-sections" style="margin-bottom:16px">
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">How to Use This Phase</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">If you are early in the HVAC path, read this phase to understand that business opportunity exists — but only after enough skill, judgment, trust, compliance awareness, and operating maturity are built.<br><br>If you already have HVAC or trade exposure, use this phase as a responsibility checkpoint. Ask whether you are actually ready for more independent responsibility, or whether ownership language is getting ahead of your real foundation.</div>
+    </div>
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">Phase 6 Operating Standard</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">The goal is not to rush into ownership. The goal is to understand the business layer early enough to make better long-term decisions.<br><br><strong>Decision logic: business-layer readiness comes from field competence, judgment, reputation, requirement awareness, ethical behavior, customer responsibility, and the ability to create value without multiplying risk.</strong><br><br>Licensing, certification, insurance, permit, employer agreement, and local requirements vary by location and work type. Verify through official sources or qualified professionals before taking independent action.</div>
+    </div>
+  </div>
+
+  <div class="phase-callout warning" style="margin-top:0">
+    <p>This phase is about widening your awareness without destroying your sequence. If you still think the business layer is mostly about hype or shortcuts, this phase is not complete yet.</p>
+  </div>
+
+  <!-- CORE SECTIONS -->
+  <div class="phase-section-divider">Core Sections</div>
+  <div class="phase-sections">
+
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">What the Business Layer Actually Is</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        The business layer is the point where HVAC stops being only a trade path and starts becoming a platform for controlled independent income, operator leverage, and long-term ownership awareness.<br><br>
+        That does not mean everyone should start a company. It means HVAC can eventually create options — side work with proper judgment, independent work over time, service-based operator paths, and company-building opportunities later — when timing and readiness align.<br><br>
+        <strong>The business layer is an expansion of possibility — not a command to move early.</strong><br><br>
+        Even if you do not plan to own a company, understanding this layer changes how you think about the trade. Once you see where the money really flows, how leverage gets created, and how workers and operators think differently, your decisions improve — even if you never build a business yourself.<br><br>
+        The core question: <em>Am I preparing responsibly for operator potential, or am I using ownership as a shortcut fantasy?</em>
+      </div>
+    </div>
+
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">The Difference Between Worker Thinking and Operator Thinking</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        <strong>Worker thinking</strong> focuses on: hourly or weekly income, the immediate job, doing assigned work well, and near-term security.<br><br>
+        <strong>Operator thinking</strong> focuses on: how work is sourced, how customers are retained, how trust turns into repeat revenue, how systems reduce friction, and how income expands beyond individual labor over time.<br><br>
+        Both mindsets matter. <strong>You should build strong worker value before trying to force operator identity.</strong><br><br>
+        People often get excited about ownership before they have enough field exposure, enough judgment, or enough respect for the sequence. That can lead to weak fundamentals, shallow credibility, legal or compliance mistakes, and overconfidence without real operating ability. Operator thinking is useful early. Operator action is only useful when the foundation is ready.
+      </div>
+    </div>
+
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">When Independent Income Becomes Realistic</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        Independent income in HVAC usually becomes realistic only after several things start to exist at once: real field exposure, trust in your own judgment, enough technical competence to avoid creating unnecessary risk, stronger awareness of customer expectations, and an understanding of scope, timing, pricing, and reliability.<br><br>
+        It is not enough to simply want independence. <strong>Independent income becomes realistic when your usefulness, confidence, and judgment start becoming stable enough to carry responsibility.</strong><br><br>
+        A lot of people imagine independent work as a fast shortcut to more money. But early independent work without enough foundation can create mistakes you cannot yet absorb, customer trust problems, pricing mistakes, quality inconsistency, and legal or licensing exposure depending on the work and location. This does not mean independent income is bad. It means timing matters.
+      </div>
+    </div>
+
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">What Must Exist Before the Business Layer Becomes Responsible</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        Before business moves become responsible, these areas usually need to be stronger:<br><br>
+        <strong>Field competence</strong> — you need more than surface familiarity; enough real capability to create value consistently.<br><br>
+        <strong>Stability</strong> — if your own work habits are not stable yet, business moves multiply chaos rather than multiply value.<br><br>
+        <strong>Reputation</strong> — people trust operators who are known for reliability, not just ambition.<br><br>
+        <strong>Judgment</strong> — business decisions require more than technical ability; they require timing, communication, and risk awareness.<br><br>
+        <strong>Awareness of requirements</strong> — licensing, certification, insurance, and local requirements vary. This layer becomes more important the closer you move to independent work. Always verify through official sources or qualified professionals.<br><br>
+        <strong>The business layer should be built on readiness, not impatience.</strong><br><br>
+        A simple readiness check: am I consistently useful in real work? Do people trust me with more responsibility? Is my technical confidence stable or still fragile? Do I understand customer-facing responsibility better than I used to? Am I thinking like an operator because I see real patterns, or just because ownership sounds attractive? If those answers are still weak, your best move is usually to keep compounding value first.
+      </div>
+    </div>
+
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">Where Business Leverage Actually Comes From</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        The business layer is not created by having a logo or talking about ownership. Leverage usually comes from reputation, repeat customers, better problem-solving value, faster trust creation, referral momentum, systems that reduce wasted motion, and stronger lane positioning.<br><br>
+        <strong>The people who eventually build strong operator paths usually spend a long time becoming highly trustworthy and highly useful first.</strong><br><br>
+        How to think about progression without forcing identity too early: the cleanest progression is often to become a solid worker, become more valuable and more trusted, understand how independent income really works, and then explore business-layer choices only when timing is responsible. That sequence is stronger than trying to jump straight to "owner" in your head.
+      </div>
+    </div>
+
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">Employee Path vs Independent Path vs Owner Path</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        <strong>Employee Path</strong> — best for people who want strong stability and lower risk, are still building competence and experience, and want income without carrying full operating pressure.<br><br>
+        <strong>Independent Path</strong> — best for people who are becoming technically and behaviorally stable, are beginning to see opportunities to handle more responsibility, and understand that independence creates more responsibility, not just more upside.<br><br>
+        <strong>Owner Path</strong> — best for people who have enough exposure to understand how work, customers, systems, and money actually interact, are ready to think beyond their own labor, and have enough maturity to build systems instead of chasing chaos.<br><br>
+        <strong>You do not need to choose your final path now. You do need to understand the progression.</strong><br><br>
+        Why sequence matters so much in HVAC business building: once you cross into independent or owner territory, you are also dealing with trust, timing, pricing judgment, customer communication, repeat expectations, and risk management. Each stage prepares you for the next one.
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FAILURE MAP -->
+  <div class="phase-section-divider">Failure Map — Why People Damage the Business Layer</div>
+  <div style="border:1px solid var(--border);margin-bottom:0;overflow-x:auto">
+    <table class="failure-table">
+      <thead>
+        <tr><th>Failure Point</th><th>What It Looks Like</th><th>System Correction</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Ownership fantasy</td><td>You treat business ownership as the shortcut instead of the later responsibility layer</td><td>Build field competence, judgment, trust, and sequence first</td></tr>
+        <tr><td>Independent work too early</td><td>You take on work before skill, legality, insurance, or customer responsibility are clear</td><td>Verify requirements and readiness before accepting risk</td></tr>
+        <tr><td>Ignoring requirements</td><td>You overlook licensing, certification, insurance, permits, or local rules</td><td>Use official sources and qualified professionals before moving independently</td></tr>
+        <tr><td>Employer boundary mistakes</td><td>You blur lines around customers, side work, agreements, or reputation</td><td>Maintain ethical boundaries and do not violate employment obligations</td></tr>
+        <tr><td>Logo-before-operations thinking</td><td>You focus on branding before competence, systems, service quality, or customer trust</td><td>Build operating readiness before visual identity</td></tr>
+        <tr><td>Underestimating customer responsibility</td><td>You focus on getting paid but ignore communication, quality, timing, callbacks, and risk</td><td>Think like an operator: service, trust, follow-through, and accountability</td></tr>
+        <tr><td>Mistaking ambition for readiness</td><td>You feel motivated but cannot prove readiness through behavior or results</td><td>Use readiness signals before increasing responsibility</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="phase-callout neutral" style="margin-top:16px">
+    <p>This phase is about widening your awareness without destroying your sequence. People often damage their long-term path by confusing business awareness with business readiness.</p>
+  </div>
+
+  <!-- SCORECARD -->
+  <div class="phase-section-divider">Business Layer Readiness Scorecard</div>
+  <p style="font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:4px;max-width:580px">Rate your current position honestly. Score: <strong>2 = strong signal</strong> &nbsp;·&nbsp; <strong>1 = possible signal</strong> &nbsp;·&nbsp; <strong>0 = caution zone</strong></p>
+  <p style="font-size:12px;color:var(--gray-400);margin-bottom:16px">A low score on any item shows exactly where your awareness needs work before responsibility increases.</p>
+  <div class="decision-area" id="p6Scorecard">
+    <div class="score-row"><div class="score-q">I understand the difference between employee income, independent income, and ownership.</div><div class="score-btns"><button class="s-btn" onclick="p6Btn(this,2)">2</button><button class="s-btn" onclick="p6Btn(this,1)">1</button><button class="s-btn" onclick="p6Btn(this,0)">0</button></div></div>
+    <div class="score-row"><div class="score-q">I have enough field exposure to respect the responsibility involved.</div><div class="score-btns"><button class="s-btn" onclick="p6Btn(this,2)">2</button><button class="s-btn" onclick="p6Btn(this,1)">1</button><button class="s-btn" onclick="p6Btn(this,0)">0</button></div></div>
+    <div class="score-row"><div class="score-q">I understand that licensing, insurance, permits, and local rules may affect independent work.</div><div class="score-btns"><button class="s-btn" onclick="p6Btn(this,2)">2</button><button class="s-btn" onclick="p6Btn(this,1)">1</button><button class="s-btn" onclick="p6Btn(this,0)">0</button></div></div>
+    <div class="score-row"><div class="score-q">I am not trying to use ownership as a shortcut around skill development.</div><div class="score-btns"><button class="s-btn" onclick="p6Btn(this,2)">2</button><button class="s-btn" onclick="p6Btn(this,1)">1</button><button class="s-btn" onclick="p6Btn(this,0)">0</button></div></div>
+    <div class="score-row"><div class="score-q">I understand that customer trust creates responsibility, not just revenue.</div><div class="score-btns"><button class="s-btn" onclick="p6Btn(this,2)">2</button><button class="s-btn" onclick="p6Btn(this,1)">1</button><button class="s-btn" onclick="p6Btn(this,0)">0</button></div></div>
+    <div class="score-row"><div class="score-q">I am willing to maintain ethical boundaries with employers, customers, and agreements.</div><div class="score-btns"><button class="s-btn" onclick="p6Btn(this,2)">2</button><button class="s-btn" onclick="p6Btn(this,1)">1</button><button class="s-btn" onclick="p6Btn(this,0)">0</button></div></div>
+    <div class="score-row"><div class="score-q">I know what I still need to learn before taking on independent work.</div><div class="score-btns"><button class="s-btn" onclick="p6Btn(this,2)">2</button><button class="s-btn" onclick="p6Btn(this,1)">1</button><button class="s-btn" onclick="p6Btn(this,0)">0</button></div></div>
+    <div class="score-row"><div class="score-q">I can explain the business layer without pretending I am ready to operate too soon.</div><div class="score-btns"><button class="s-btn" onclick="p6Btn(this,2)">2</button><button class="s-btn" onclick="p6Btn(this,1)">1</button><button class="s-btn" onclick="p6Btn(this,0)">0</button></div></div>
+    <div class="score-total-bar">
+      <div class="score-total-label">Current score</div>
+      <div class="score-total-val" id="p6Score">—</div>
+    </div>
+    <div class="score-interp" id="p6Interp"></div>
+  </div>
+
+  <!-- BUSINESS LAYER TRACKER -->
+  <div class="phase-section-divider">Business Layer Tracker</div>
+  <p style="font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:4px;max-width:580px">Use this tracker to identify which part of the business layer needs attention before responsibility increases.</p>
+  <p style="font-size:12px;color:var(--gray-400);margin-bottom:16px">Licensing, certification, insurance, permit, and local requirements vary by location and work type. Always verify through official sources or qualified professionals.</p>
+  <div style="border:1px solid var(--border);overflow-x:auto;margin-bottom:0">
+    <table class="failure-table">
+      <thead>
+        <tr><th>Business Layer Area</th><th>What to Check</th><th>Next Move</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Competence</strong></td><td>Can I create value consistently without creating avoidable risk?</td><td>Keep building field skill and correction speed</td></tr>
+        <tr><td><strong>Requirements</strong></td><td>What licensing, certification, insurance, or local rules may apply?</td><td>Verify through official sources or qualified professionals</td></tr>
+        <tr><td><strong>Customer Responsibility</strong></td><td>Can I handle communication, timing, quality, and callbacks?</td><td>Study service standards and customer expectations</td></tr>
+        <tr><td><strong>Ethical Boundaries</strong></td><td>Am I respecting employer, customer, and agreement boundaries?</td><td>Avoid shortcuts that damage reputation or create legal exposure</td></tr>
+        <tr><td><strong>Operator Thinking</strong></td><td>Do I understand how work is sourced, delivered, repeated, and systemized?</td><td>Observe operations, scheduling, pricing logic, and repeat demand</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- STRATEGY BUILDER -->
+  <div class="phase-section-divider">Build Your Business Layer Awareness</div>
+  <p style="font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:4px;max-width:580px">Select your current situation across all three areas. If you still think the business layer means "skip ahead," this phase is not complete yet.</p>
+  <p style="font-size:12px;color:var(--gray-400);margin-bottom:20px">Choose based on where you actually are — not where you want to be.</p>
+
+  <div style="margin-bottom:8px">
+    <div class="section-label" style="margin-bottom:10px">Right now, the business layer means</div>
+    <div class="position-options" id="p6Means">
+      <div class="position-opt" onclick="selectP6(this,'means')">
+        <div class="position-opt-title">Understanding HVAC can create more than wage income over time</div>
+        <div class="position-opt-desc">I am building awareness that operator potential exists — but I am not rushing toward it.</div>
+      </div>
+      <div class="position-opt" onclick="selectP6(this,'means')">
+        <div class="position-opt-title">Seeing where operator leverage comes from</div>
+        <div class="position-opt-desc">I am studying how work is sourced, repeated, and systemized before acting on it.</div>
+      </div>
+      <div class="position-opt" onclick="selectP6(this,'means')">
+        <div class="position-opt-title">Respecting the difference between ambition and readiness</div>
+        <div class="position-opt-desc">I understand that wanting more is not the same as being ready for more responsibility.</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-bottom:8px;margin-top:20px">
+    <div class="section-label" style="margin-bottom:10px">I am closest to</div>
+    <div class="position-options" id="p6Closest">
+      <div class="position-opt" onclick="selectP6(this,'closest')">
+        <div class="position-opt-title">Strengthening my employee path</div>
+        <div class="position-opt-desc">My current priority is becoming more valuable, more stable, and more trusted as a worker.</div>
+      </div>
+      <div class="position-opt" onclick="selectP6(this,'closest')">
+        <div class="position-opt-title">Becoming more independent over time</div>
+        <div class="position-opt-desc">I am starting to see opportunities for more responsibility — but I am verifying readiness first.</div>
+      </div>
+      <div class="position-opt" onclick="selectP6(this,'closest')">
+        <div class="position-opt-title">Learning how owner-level leverage actually works</div>
+        <div class="position-opt-desc">I am studying the operator path without pretending I am ready to act on it yet.</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:20px">
+    <div class="section-label" style="margin-bottom:10px">My next responsible move should focus on</div>
+    <div class="position-options" id="p6NextMove">
+      <div class="position-opt" onclick="selectP6(this,'nextmove')">
+        <div class="position-opt-title">Becoming more valuable first</div>
+        <div class="position-opt-desc">Field competence, stability, and usefulness come before business-layer action.</div>
+      </div>
+      <div class="position-opt" onclick="selectP6(this,'nextmove')">
+        <div class="position-opt-title">Increasing judgment, trust, and consistency</div>
+        <div class="position-opt-desc">Building the track record that makes operator responsibility realistic later.</div>
+      </div>
+      <div class="position-opt" onclick="selectP6(this,'nextmove')">
+        <div class="position-opt-title">Understanding requirements before taking on more risk</div>
+        <div class="position-opt-desc">Verifying licensing, insurance, permits, and local rules through official sources before any independent move.</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="border:1px solid var(--border);padding:20px 24px;margin-top:16px;background:var(--gray-50)">
+    <div style="font-family:var(--font-head);font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--gray-400);margin-bottom:8px">Complete This Statement</div>
+    <p id="p6StatementText" style="font-size:15px;color:var(--gray-400);font-style:italic;font-weight:500;line-height:1.7;margin:0">Select options above to generate your strategy statement.</p>
+    <div style="font-size:12px;color:var(--gray-400);margin-top:8px">Sample Completed Statement: "My current business-layer focus should be learning customer responsibility and licensing awareness because I still need to understand risk, requirements, and service expectations before taking on more responsibility."</div>
+  </div>
+
+  <!-- QUESTIONS BANK -->
+  <div class="phase-section-divider">Templates and Questions for Business Layer Awareness</div>
+  <p style="font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:16px;max-width:580px">Use these questions before considering side work, independent income, or ownership.</p>
+  <div class="q-bank">
+    <div class="qb-item">
+      <button class="qb-trigger" onclick="toggleQB(this)">
+        <span class="qb-trigger-text">Questions to Ask Yourself</span>
+        <span class="qb-icon">+</span>
+      </button>
+      <div class="qb-body"><ul>
+        <li>Am I thinking about business because I am ready, or because ownership sounds exciting?</li>
+        <li>What responsibility would I be taking on beyond the technical work?</li>
+        <li>What legal, licensing, insurance, or permit questions would need to be verified?</li>
+        <li>Would this move violate any employer agreement, customer boundary, or ethical line?</li>
+        <li>Can I handle customer communication, pricing judgment, callbacks, and follow-through?</li>
+        <li>What do I still need to learn before this becomes responsible?</li>
+      </ul></div>
+    </div>
+    <div class="qb-item">
+      <button class="qb-trigger" onclick="toggleQB(this)">
+        <span class="qb-trigger-text">Questions to Ask a Licensed Professional, Mentor, or Experienced Operator</span>
+        <span class="qb-icon">+</span>
+      </button>
+      <div class="qb-body"><ul>
+        <li>What requirements should someone verify before independent HVAC work?</li>
+        <li>What mistakes do people make when they try to operate too early?</li>
+        <li>What does customer responsibility look like beyond the repair itself?</li>
+        <li>What should someone understand about insurance, callbacks, pricing, and reputation?</li>
+        <li>When does independent work become realistic instead of reckless?</li>
+        <li>What signs show someone is ready for more business responsibility?</li>
+      </ul></div>
+    </div>
+    <div class="qb-item">
+      <button class="qb-trigger" onclick="toggleQB(this)">
+        <span class="qb-trigger-text">Ethical Boundary Reminder</span>
+        <span class="qb-icon">+</span>
+      </button>
+      <div class="qb-body">
+        <div style="border-left:3px solid var(--black);padding:16px 20px;background:var(--gray-50);font-size:15px;color:var(--black);line-height:1.8;font-weight:600;margin-bottom:12px">"Do not take customers, violate agreements, misrepresent credentials, ignore licensing requirements, or treat independent work casually."</div>
+        <p style="font-size:14px;color:var(--gray-600);line-height:1.7">Operator thinking is valuable. Operator action must be responsible. Licensing, certification, insurance, permit, employer agreement, and local requirements vary by location and work type. Verify through official sources or qualified professionals before taking independent action.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 30-DAY WORKFLOW -->
+  <div class="phase-section-divider">30-Day Business Layer Awareness Workflow</div>
+  <p style="font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:4px;max-width:580px">This workflow is not about starting a business in 30 days. It is about understanding what responsible business-layer readiness would require.</p>
+  <p style="font-size:12px;color:var(--gray-400);margin-bottom:16px">The goal is not pressure. The goal is responsible awareness.</p>
+  <div class="workflow-list">
+    <div class="wf-item">
+      <button class="wf-trigger" onclick="toggleWF(this)">
+        <div><div class="wf-trigger-label">Days 1–7</div><div class="wf-trigger-title">Responsibility Scan</div></div>
+        <span class="wf-icon">+</span>
+      </button>
+      <div class="wf-body"><ul>
+        <li>Write down what independent work would require beyond technical ability</li>
+        <li>Identify possible legal, licensing, insurance, or permit questions</li>
+        <li>List what you do not yet understand about operator responsibility</li>
+      </ul></div>
+    </div>
+    <div class="wf-item">
+      <button class="wf-trigger" onclick="toggleWF(this)">
+        <div><div class="wf-trigger-label">Days 8–14</div><div class="wf-trigger-title">Operator Observation</div></div>
+        <span class="wf-icon">+</span>
+      </button>
+      <div class="wf-body"><ul>
+        <li>Observe how work is sourced, scheduled, delivered, priced, and followed up on</li>
+        <li>Notice how customer trust, callbacks, reputation, and communication affect business quality</li>
+        <li>Pay attention to systems and patterns — not just tools and tasks</li>
+      </ul></div>
+    </div>
+    <div class="wf-item">
+      <button class="wf-trigger" onclick="toggleWF(this)">
+        <div><div class="wf-trigger-label">Days 15–21</div><div class="wf-trigger-title">Requirement Check</div></div>
+        <span class="wf-icon">+</span>
+      </button>
+      <div class="wf-body"><ul>
+        <li>Identify official sources or qualified professionals you would need to verify requirements with</li>
+        <li>Do not rely on social media, forums, or guesswork for legal or licensing conclusions</li>
+        <li>Write down what must be confirmed before any independent move</li>
+      </ul></div>
+    </div>
+    <div class="wf-item">
+      <button class="wf-trigger" onclick="toggleWF(this)">
+        <div><div class="wf-trigger-label">Days 22–30</div><div class="wf-trigger-title">Readiness Review</div></div>
+        <span class="wf-icon">+</span>
+      </button>
+      <div class="wf-body"><ul>
+        <li>Choose your current responsible focus: strengthen worker value, deepen technical competence, learn customer responsibility, study requirements, observe operator systems, or delay independent action until readiness improves</li>
+        <li>Complete the business-layer awareness statement if you have not already</li>
+        <li>Do not force a business move before readiness is honest</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <!-- COMPLETION CHECKLIST -->
+  <div class="phase-section-divider">Phase 6 Completion Checklist</div>
+  <p style="font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:4px;max-width:580px">Before moving to Phase 7, confirm the following. If you cannot answer these, revisit this phase before moving into scale thinking.</p>
+  <p style="font-size:12px;color:var(--gray-400);margin-bottom:16px">Do not skip this checklist. Phase 7 builds on the awareness Phase 6 establishes.</p>
+  <div class="phase-checklist-area">
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I understand what the business layer actually means</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I understand the difference between worker thinking and operator thinking</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I understand that independent work creates risk and responsibility</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I know that licensing, insurance, permits, and local rules must be verified</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I understand ethical boundaries around employers, customers, and agreements</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I know whether my current focus should be competence, requirements, customer responsibility, or operator observation</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I am not treating ownership as a shortcut around the real sequence</div>
+    </div>
+  </div>
+
+  <!-- PHASE 6 OUTCOME -->
+  <div class="phase-section-divider">Phase 6 Outcome</div>
+  <div class="phase-callout neutral">
+    <p>By the end of this phase, you should know what the business layer actually means in HVAC, the difference between worker thinking and operator thinking, when independent income starts becoming realistic, what must exist before business moves become responsible, how employee, independent, and owner paths differ, and what your next business-layer awareness move should focus on.</p>
+    <p>If you still think the business layer is mostly about hype, revisit this phase before continuing.</p>
+  </div>
+
+  <!-- SYSTEM UPDATE NOTE -->
+  <div class="phase-note">
+    <div class="phase-note-label">Phase 6 System Update Note</div>
+    <div class="phase-note-text">This phase should stay aligned with responsible business-layer awareness, licensing realities, insurance considerations, local requirements, ethical boundaries, and operator readiness. Future update passes may refine this phase if HVAC business requirements, licensing interpretations, insurance expectations, local rules, or common independent-work risks materially change. All updates are included with your access.</div>
+  </div>
+
+  <!-- COMPLETION GATE -->
+  <div class="completion-gate" style="margin-top:32px">
+    <div class="section-label" style="margin-bottom:16px;text-align:center">Phase 6 Complete</div>
+    <p class="completion-statement">"I understand the business layer, the difference between worker and operator thinking, and what responsible preparation looks like before taking on more responsibility."</p>
+    <p style="font-size:13px;color:var(--gray-400);margin-bottom:28px;text-align:center">When you are ready, the next step is <strong style="color:var(--black)">Phase 7: Scale Path</strong> — where you explore how long-term growth works through specialization, leverage, systems, and how stronger paths compound over time.</p>
+    <div class="completion-actions">
+      <a href="/access" class="btn-outline">← Return to Dashboard</a>
+      <a href="/phase-7" class="btn-primary" style="font-size:13px;padding:13px 28px">Next: Phase 7 — Scale Path →</a>
+    </div>
+  </div>
+
+  <!-- PROTECTED UTILITY FOOTER -->
+  <footer class="protected-utility-footer">
+    <div class="protected-utility-links">
+      <a href="/terms">Terms</a>
+      <a href="/privacy">Privacy</a>
+      <a href="/refund-policy">Refund Policy</a>
+      <a href="/digital-delivery">Digital Delivery</a>
+      <a href="/disclaimer">Disclaimer</a>
+      <a href="/support">Support</a>
+    </div>
+    <p class="protected-utility-note">Betrix Business Systems provides structured informational and execution guidance. This system does not provide legal, financial, tax, insurance, licensing, employment, or technical trade advice.</p>
+  </footer>
+
+</div><!-- /phase-layout -->
+
+<script src="/assets/app.js" defer></script>
+
+<!-- Memberstack test-mode install -->
+<script type="module">
+  import memberstackDOM from 'https://cdn.jsdelivr.net/npm/@memberstack/dom@latest/+esm';
+  const memberstack = memberstackDOM.init({
+    publicKey: "pk_sb_b090b30f6ecf589f710e",
+  });
+</script>
+
+</body>
+</html>
+```
+
+---
+
+File 10 of 19 complete. Waiting for **NEXT FILE**.

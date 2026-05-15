@@ -1,0 +1,573 @@
+**`phase-8.html`**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business Readiness Gate | Betrix HVAC Technician Business System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body style="padding-top:60px">
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo">Betrix <span>Business Systems</span></div>
+    <div class="phase-nav-label">Extension Layer — Business Readiness Gate</div>
+    <div style="display:flex;align-items:center;gap:0">
+      <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">Dark</button>
+      <a href="/access" class="nav-cta">← Dashboard</a>
+    </div>
+  </div>
+</nav>
+
+<div class="phase-layout">
+
+  <!-- PHASE HEADER -->
+  <div class="phase-header">
+    <div class="phase-eyebrow" style="color:var(--gray-400);letter-spacing:0.18em;text-transform:uppercase;font-size:11px;font-weight:700;margin-bottom:14px">Extension Layer — Post-Core Readiness</div>
+    <h1 class="phase-title">Business Readiness Gate</h1>
+    <div class="phase-objective">Test the business layer before risking income, savings, debt, customer trust, employer relationships, licensing exposure, or reputation.</div>
+    <p class="phase-desc">This phase is not about pushing you to start a business. It is about helping you decide whether the business layer is actually ready to be tested — and whether the next move should be preparation, validation, a small controlled pilot, or no business action yet. Digital system. Not HVAC training. Not a certification program. Not legal, financial, insurance, licensing, or tax advice.</p>
+  </div>
+
+  <!-- OVERVIEW CARDS -->
+  <div class="overview-grid">
+    <div class="overview-card">
+      <div class="overview-card-label">What You Will Test</div>
+      <div class="overview-card-title">Business-layer readiness</div>
+      <ul>
+        <li>Whether income replacement is realistic</li>
+        <li>What capital exposure could occur before stability</li>
+        <li>What compliance requirements may apply</li>
+        <li>Whether demand can be created ethically</li>
+        <li>Whether a small controlled test is viable — or if the answer is pause</li>
+      </ul>
+    </div>
+    <div class="overview-card">
+      <div class="overview-card-label">Decisions You Will Make</div>
+      <div class="overview-card-title">Your readiness decision</div>
+      <ul>
+        <li>Your business-readiness scorecard results</li>
+        <li>Your biggest current readiness risk</li>
+        <li>Your most responsible first business test</li>
+        <li>Your next readiness move</li>
+        <li>Your Go / No-Go decision</li>
+      </ul>
+    </div>
+    <div class="overview-card">
+      <div class="overview-card-label">Before Moving Forward</div>
+      <div class="overview-card-title">What must be confirmed</div>
+      <ul>
+        <li>All core sections reviewed</li>
+        <li>Scorecard completed honestly</li>
+        <li>Strategy builder selections made</li>
+        <li>Final decision made — Go Small, Prepare More, Pause, or Return</li>
+        <li>Completion checklist confirmed</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ORIENTATION -->
+  <div class="phase-section-divider">Phase 8 Orientation</div>
+  <div class="phase-callout">
+    <p><strong>Before You Continue: This phase is the business-readiness gate. It exists because ambition can move faster than readiness.</strong></p>
+    <p>Phase 7 completed the core system. Phase 8 asks a harder question: is the business layer actually ready to be tested? HVAC business activity can create real opportunity, but it can also create real exposure if the person moves before competence, requirements, customer responsibility, ethical boundaries, and capital reality are clear.</p>
+    <p>Do not use this phase to justify rushing. Use it to test whether the business layer deserves action, preparation, or delay.</p>
+  </div>
+
+  <div class="phase-sections" style="margin-bottom:16px">
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">How to Use This Phase</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">Move through this phase after completing the core seven-phase path. The output of this phase is not "start a business." The output is a responsible readiness decision.<br><br>Use this phase to clarify: whether independent income is realistic yet, whether your current income can absorb risk, whether you understand compliance requirements, whether you can create demand ethically, whether a small pilot can be tested without overexposure, and whether the business layer should remain observation-only for now.</div>
+    </div>
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">Phase 8 Operating Standard</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">This phase uses a conservative standard. Business readiness is not measured by excitement, logo ideas, social media pages, or the desire to make more money.<br><br><strong>Business readiness is measured by:</strong> competence, compliance awareness, customer responsibility, ethical boundaries, income stability, capital exposure, demand creation ability, small-test discipline, and the ability to stop before damage increases.<br><br>If a move creates legal, financial, ethical, or reputation risk that you do not understand, the move is not ready.</div>
+    </div>
+  </div>
+
+  <div class="phase-callout warning" style="margin-top:0">
+    <p>Requirements vary by location and work type. Verify through official sources or qualified professionals before taking independent action. AI should not be treated as the final authority on licensing, law, insurance, tax, safety, employment agreements, technical work, or customer obligations.</p>
+  </div>
+
+  <!-- CORE SECTIONS -->
+  <div class="phase-section-divider">Core Sections</div>
+  <div class="phase-sections">
+
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">What the Business Readiness Gate Actually Is</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        The Business Readiness Gate is a decision layer between long-term ambition and real business exposure. It exists to prevent the user from confusing business interest with business readiness.<br><br>
+        A person can be interested in ownership before they are ready to carry ownership risk. A person can understand HVAC technically before they are ready to handle customer acquisition, pricing, callbacks, insurance, documentation, scheduling, ethics, liability, or local requirements.<br><br>
+        The gate asks: Is this business move real? Is it legal and ethical? Is it financially survivable? Is there demand? Can it be tested small? What could break it? Should I proceed, prepare, or pause?
+      </div>
+    </div>
+
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">Income Replacement Reality</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        Business activity should not be evaluated only by possible upside. It must be evaluated against what it needs to replace, support, or protect.<br><br>
+        A person should understand: current monthly income needs, essential expenses, savings runway, debt obligations, family or household exposure, risk tolerance, what happens if income slows down, and what happens if a job, contract, or side opportunity fails.<br><br>
+        <strong>The goal is not to scare the user. The goal is to prevent unclear income pressure from turning into rushed business decisions.</strong>
+      </div>
+    </div>
+
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">Capital Exposure Reality</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        Business moves can create costs before they create stability. Possible exposure may include: tools, vehicle needs, insurance, licensing or application costs, bonding or permits where applicable, marketing spend, software, callbacks or rework, unpaid time, and lost wages from poor timing.<br><br>
+        This phase does not tell the user what to spend. It helps the user see whether the planned move requires capital, risk, or responsibility they have not prepared for.
+      </div>
+    </div>
+
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">Compliance and Permission Reality</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        Independent HVAC work may be controlled by licensing, certification, insurance, permits, employer agreements, local rules, state rules, municipal rules, and the type of work being performed.<br><br>
+        <strong>Requirements vary by location and work type. Verify through official sources or qualified professionals before taking independent action.</strong><br><br>
+        Do not assume that experience, online advice, a customer request, or a small job automatically makes the work appropriate or legal.
+      </div>
+    </div>
+
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">Rainmaker Readiness</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        Business readiness is not only technical. Someone must create demand. Rainmaker readiness means understanding whether the user can ethically generate conversations, opportunities, referrals, local trust, or customer interest without misrepresenting skill, credentials, availability, or authority.<br><br>
+        This does not require aggressive selling. It does require a realistic answer to this question: <em>Where will the first legitimate opportunity come from?</em>
+      </div>
+    </div>
+
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">Smallest Viable Business Test</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        The safest business test is usually smaller than the person wants. A responsible test should be: legal, ethical, low exposure, clearly bounded, tied to verified requirements, small enough to stop, measurable enough to learn from, and not dependent on fantasy income.<br><br>
+        <strong>The point is to test reality before building identity around the business idea.</strong>
+      </div>
+    </div>
+
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">AI-Assisted, Human-Verified Planning</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        AI can help organize research, compare scenarios, draft checklists, and clarify decision points. AI should not be treated as the final authority on licensing, law, insurance, tax, safety, employment agreements, technical work, or customer obligations.<br><br>
+        <strong>Use AI to organize the question. Use official sources and qualified professionals to verify the answer.</strong>
+      </div>
+    </div>
+
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">Go / No-Go Decision</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        This phase ends with a decision. Possible outcomes: <strong>Go small</strong> — proceed with a controlled, verified, low-risk test. <strong>Prepare more</strong> — build requirements, savings, skill, trust, or demand first. <strong>Pause</strong> — do not take business action yet. <strong>Stay employed and observe</strong> — continue building competence and operator awareness. <strong>Revisit earlier phases</strong> — return to skill, income expansion, business layer, or scale path.<br><br>
+        A pause is not failure. A pause can be the most responsible business decision.
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FAILURE MAP -->
+  <div class="phase-section-divider">Failure Map — Why Business Moves Damage People</div>
+  <div style="border:1px solid var(--border);margin-bottom:0;overflow-x:auto">
+    <table class="failure-table">
+      <thead>
+        <tr><th>Failure Point</th><th>What It Looks Like</th><th>System Correction</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Business fantasy</td><td>Thinking about logos, names, and freedom before responsibility</td><td>Test readiness before identity</td></tr>
+        <tr><td>Income replacement illusion</td><td>Assuming business income will quickly replace wages</td><td>Map income needs and runway first</td></tr>
+        <tr><td>Capital blindness</td><td>Underestimating tools, insurance, downtime, callbacks, or setup costs</td><td>Identify exposure before action</td></tr>
+        <tr><td>Compliance shortcut</td><td>Taking work before requirements are verified</td><td>Verify licensing, insurance, permits, and local rules</td></tr>
+        <tr><td>Rainmaker gap</td><td>Having skill interest but no realistic demand source</td><td>Build ethical demand creation before assuming sales</td></tr>
+        <tr><td>Pilot too large</td><td>Turning a test into a risky commitment</td><td>Use the smallest viable business test</td></tr>
+        <tr><td>AI overreliance</td><td>Treating AI output as legal, licensing, insurance, or financial authority</td><td>Use AI for organization, then verify with official sources</td></tr>
+        <tr><td>Reputation risk</td><td>Taking work that can damage trust if done wrong</td><td>Protect reputation before chasing revenue</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="phase-callout neutral" style="margin-top:16px">
+    <p>People usually damage their business path not by being bad — but by moving before the system is ready. Readiness is not about excitement. Readiness is about survivability if the move earns nothing for a period of time.</p>
+  </div>
+
+  <!-- SCORECARD -->
+  <div class="phase-section-divider">Business Readiness Scorecard</div>
+  <p style="font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:4px;max-width:580px">Score your current position honestly. <strong>2 = strong signal</strong> &nbsp;·&nbsp; <strong>1 = possible signal</strong> &nbsp;·&nbsp; <strong>0 = caution zone</strong></p>
+  <p style="font-size:12px;color:var(--gray-400);margin-bottom:16px">A low score on any item shows exactly where preparation is needed before increasing business exposure.</p>
+  <div class="decision-area" id="p8Scorecard">
+    <div class="score-row"><div class="score-q">I understand what business risk could affect my income, savings, debt, or household stability.</div><div class="score-btns"><button class="s-btn" onclick="p8Btn(this,2)">2</button><button class="s-btn" onclick="p8Btn(this,1)">1</button><button class="s-btn" onclick="p8Btn(this,0)">0</button></div></div>
+    <div class="score-row"><div class="score-q">I know what requirements may apply before any independent HVAC work is attempted.</div><div class="score-btns"><button class="s-btn" onclick="p8Btn(this,2)">2</button><button class="s-btn" onclick="p8Btn(this,1)">1</button><button class="s-btn" onclick="p8Btn(this,0)">0</button></div></div>
+    <div class="score-row"><div class="score-q">I understand that insurance, permits, licensing, employer agreements, and local rules may affect what I can do.</div><div class="score-btns"><button class="s-btn" onclick="p8Btn(this,2)">2</button><button class="s-btn" onclick="p8Btn(this,1)">1</button><button class="s-btn" onclick="p8Btn(this,0)">0</button></div></div>
+    <div class="score-row"><div class="score-q">I can identify where a legitimate first opportunity would come from without misrepresentation.</div><div class="score-btns"><button class="s-btn" onclick="p8Btn(this,2)">2</button><button class="s-btn" onclick="p8Btn(this,1)">1</button><button class="s-btn" onclick="p8Btn(this,0)">0</button></div></div>
+    <div class="score-row"><div class="score-q">I can describe a small, controlled test that does not overexpose me.</div><div class="score-btns"><button class="s-btn" onclick="p8Btn(this,2)">2</button><button class="s-btn" onclick="p8Btn(this,1)">1</button><button class="s-btn" onclick="p8Btn(this,0)">0</button></div></div>
+    <div class="score-row"><div class="score-q">I know what capital, tools, time, or operating cost could be required.</div><div class="score-btns"><button class="s-btn" onclick="p8Btn(this,2)">2</button><button class="s-btn" onclick="p8Btn(this,1)">1</button><button class="s-btn" onclick="p8Btn(this,0)">0</button></div></div>
+    <div class="score-row"><div class="score-q">I am not using business ownership as an escape from skill, stability, or employment frustration.</div><div class="score-btns"><button class="s-btn" onclick="p8Btn(this,2)">2</button><button class="s-btn" onclick="p8Btn(this,1)">1</button><button class="s-btn" onclick="p8Btn(this,0)">0</button></div></div>
+    <div class="score-row"><div class="score-q">I can explain what would make this business move a Go, Prepare More, Pause, or No-Go decision.</div><div class="score-btns"><button class="s-btn" onclick="p8Btn(this,2)">2</button><button class="s-btn" onclick="p8Btn(this,1)">1</button><button class="s-btn" onclick="p8Btn(this,0)">0</button></div></div>
+    <div class="score-total-bar">
+      <div class="score-total-label">Current score</div>
+      <div class="score-total-val" id="p8Score">—</div>
+    </div>
+    <div class="score-interp" id="p8Interp"></div>
+  </div>
+
+  <!-- TRACKER -->
+  <div class="phase-section-divider">Business Readiness Tracker</div>
+  <p style="font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:4px;max-width:580px">Use this tracker to identify which readiness area needs work before any business action. Requirements, costs, and timelines vary significantly by location, work type, and individual situation.</p>
+  <p style="font-size:12px;color:var(--gray-400);margin-bottom:16px">Verify all requirements through official sources or qualified professionals.</p>
+  <div style="border:1px solid var(--border);overflow-x:auto;margin-bottom:0">
+    <table class="failure-table">
+      <thead>
+        <tr><th>Readiness Area</th><th>What to Check</th><th>Next Move</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Income Replacement</strong></td><td>What income must be protected or replaced?</td><td>Calculate essential monthly exposure before making any move</td></tr>
+        <tr><td><strong>Capital Exposure</strong></td><td>What costs appear before stability?</td><td>List tools, insurance, downtime, vehicle, and setup risks</td></tr>
+        <tr><td><strong>Compliance</strong></td><td>What rules apply to this work type and location?</td><td>Verify through official sources or qualified professionals</td></tr>
+        <tr><td><strong>Demand Creation</strong></td><td>Where will legitimate opportunities come from?</td><td>Identify ethical channels and referral paths</td></tr>
+        <tr><td><strong>Small Test</strong></td><td>What is the smallest responsible test?</td><td>Define a controlled pilot or decide to pause</td></tr>
+        <tr><td><strong>Reputation</strong></td><td>What could damage trust if done too soon?</td><td>Protect quality, transparency, and boundaries</td></tr>
+        <tr><td><strong>Stop Rule</strong></td><td>When should the user stop or delay?</td><td>Define red flags before taking action</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- STRATEGY BUILDER -->
+  <div class="phase-section-divider">Build Your Business Readiness Strategy</div>
+  <p style="font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:4px;max-width:580px">Select your current situation across all three areas. If the statement does not reflect a responsible next move, this phase is not complete yet.</p>
+  <p style="font-size:12px;color:var(--gray-400);margin-bottom:20px">Choose based on reality — not on what sounds ambitious.</p>
+
+  <div style="margin-bottom:8px">
+    <div class="section-label" style="margin-bottom:10px">My biggest business-readiness risk is</div>
+    <div class="position-options" id="p8Risk">
+      <div class="position-opt" onclick="selectP8(this,'risk')">
+        <div class="position-opt-title">Income replacement pressure</div>
+        <div class="position-opt-desc">I am not sure how long I can survive if business income is slow or absent.</div>
+      </div>
+      <div class="position-opt" onclick="selectP8(this,'risk')">
+        <div class="position-opt-title">Capital exposure</div>
+        <div class="position-opt-desc">I may underestimate the tools, insurance, time, or cost required before stability.</div>
+      </div>
+      <div class="position-opt" onclick="selectP8(this,'risk')">
+        <div class="position-opt-title">Compliance uncertainty</div>
+        <div class="position-opt-desc">I am not fully clear on what licensing, permits, or local rules apply.</div>
+      </div>
+      <div class="position-opt" onclick="selectP8(this,'risk')">
+        <div class="position-opt-title">Weak demand creation</div>
+        <div class="position-opt-desc">I do not have a clear, ethical path to a first legitimate opportunity.</div>
+      </div>
+      <div class="position-opt" onclick="selectP8(this,'risk')">
+        <div class="position-opt-title">Moving before competence is deep enough</div>
+        <div class="position-opt-desc">My skill, stability, or field credibility may not be ready for independent work.</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-bottom:8px;margin-top:20px">
+    <div class="section-label" style="margin-bottom:10px">My first responsible business test should be</div>
+    <div class="position-options" id="p8Test">
+      <div class="position-opt" onclick="selectP8(this,'test')">
+        <div class="position-opt-title">Observation only</div>
+        <div class="position-opt-desc">Study how the business layer works before taking any independent action.</div>
+      </div>
+      <div class="position-opt" onclick="selectP8(this,'test')">
+        <div class="position-opt-title">Requirement verification</div>
+        <div class="position-opt-desc">Identify and verify all licensing, insurance, permit, and local requirements first.</div>
+      </div>
+      <div class="position-opt" onclick="selectP8(this,'test')">
+        <div class="position-opt-title">Demand conversation research</div>
+        <div class="position-opt-desc">Explore where legitimate demand could come from before any financial commitment.</div>
+      </div>
+      <div class="position-opt" onclick="selectP8(this,'test')">
+        <div class="position-opt-title">Small low-exposure pilot only if verified</div>
+        <div class="position-opt-desc">A controlled, legal, bounded test after requirements are confirmed.</div>
+      </div>
+      <div class="position-opt" onclick="selectP8(this,'test')">
+        <div class="position-opt-title">No business action yet</div>
+        <div class="position-opt-desc">Return to earlier phases and strengthen competence, stability, or income first.</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:20px">
+    <div class="section-label" style="margin-bottom:10px">My next readiness move should focus on</div>
+    <div class="position-options" id="p8Move">
+      <div class="position-opt" onclick="selectP8(this,'move')">
+        <div class="position-opt-title">Protecting income first</div>
+        <div class="position-opt-desc">Ensure current income can absorb risk before taking on business exposure.</div>
+      </div>
+      <div class="position-opt" onclick="selectP8(this,'move')">
+        <div class="position-opt-title">Verifying requirements</div>
+        <div class="position-opt-desc">Confirm all licensing, permits, insurance, and local rules through official sources.</div>
+      </div>
+      <div class="position-opt" onclick="selectP8(this,'move')">
+        <div class="position-opt-title">Building demand ethically</div>
+        <div class="position-opt-desc">Identify legitimate demand channels before committing capital or time.</div>
+      </div>
+      <div class="position-opt" onclick="selectP8(this,'move')">
+        <div class="position-opt-title">Reducing capital exposure</div>
+        <div class="position-opt-desc">Minimize financial risk before any business activity begins.</div>
+      </div>
+      <div class="position-opt" onclick="selectP8(this,'move')">
+        <div class="position-opt-title">Strengthening competence before risk</div>
+        <div class="position-opt-desc">Build deeper field skill and stability before taking on customer-facing responsibility.</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="border:1px solid var(--border);padding:20px 24px;margin-top:16px;background:var(--gray-50)">
+    <div style="font-family:var(--font-head);font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--gray-400);margin-bottom:8px">Complete This Statement</div>
+    <p id="p8StatementText" style="font-size:15px;color:var(--gray-400);font-style:italic;font-weight:500;line-height:1.7;margin:0 0 8px">Select options above to generate your business-readiness statement.</p>
+    <div style="font-size:12px;color:var(--gray-400)">Sample: "My next business-readiness move should focus on verifying requirements because my biggest risk is compliance uncertainty, and my first responsible business test should be requirement verification."</div>
+  </div>
+
+  <!-- QUESTIONS BANK -->
+  <div class="phase-section-divider">Questions and Prompts</div>
+  <p style="font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:16px;max-width:580px">Use these before making any independent business move.</p>
+  <div class="q-bank">
+    <div class="qb-item">
+      <button class="qb-trigger" onclick="toggleQB(this)">
+        <span class="qb-trigger-text">Questions to Ask Yourself</span>
+        <span class="qb-icon">+</span>
+      </button>
+      <div class="qb-body"><ul>
+        <li>What income am I trying to protect or replace?</li>
+        <li>What happens if this business move earns nothing for a period of time?</li>
+        <li>What requirements apply before I take any independent action?</li>
+        <li>What could damage my reputation if I move too early?</li>
+        <li>Am I trying to solve a real opportunity or escape discomfort?</li>
+        <li>Can I test this smaller?</li>
+        <li>What would make this a clear No-Go?</li>
+      </ul></div>
+    </div>
+    <div class="qb-item">
+      <button class="qb-trigger" onclick="toggleQB(this)">
+        <span class="qb-trigger-text">Questions to Ask a Qualified Professional, Licensed Operator, or Mentor</span>
+        <span class="qb-icon">+</span>
+      </button>
+      <div class="qb-body"><ul>
+        <li>What requirements apply to this type of HVAC work in this location?</li>
+        <li>What insurance or permitting issues should I understand first?</li>
+        <li>What mistakes do early independent operators usually underestimate?</li>
+        <li>What kind of work should not be touched without deeper experience?</li>
+        <li>What should be documented before accepting any customer-facing responsibility?</li>
+        <li>What is a responsible first test versus an irresponsible one?</li>
+      </ul></div>
+    </div>
+    <div class="qb-item">
+      <button class="qb-trigger" onclick="toggleQB(this)">
+        <span class="qb-trigger-text">Business Readiness Decision Prompt</span>
+        <span class="qb-icon">+</span>
+      </button>
+      <div class="qb-body">
+        <p style="font-size:14px;color:var(--gray-600);line-height:1.7;margin-bottom:12px">Use this before taking any business action. If the answer is "force identity," slow down and complete the readiness preparation first.</p>
+        <div style="border-left:3px solid var(--black);padding:16px 20px;background:var(--gray-50);font-size:16px;color:var(--black);line-height:1.8;font-weight:600">"Am I testing a verified opportunity, or am I trying to force a business identity before the system is ready?"</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 30-DAY WORKFLOW -->
+  <div class="phase-section-divider">30-Day Business Readiness Workflow</div>
+  <p style="font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:4px;max-width:580px">This workflow is not about starting a business in 30 days. It is about deciding whether the business layer deserves action, preparation, or delay.</p>
+  <p style="font-size:12px;color:var(--gray-400);margin-bottom:16px">The goal is not speed. The goal is a responsible readiness decision.</p>
+  <div class="workflow-list">
+    <div class="wf-item">
+      <button class="wf-trigger" onclick="toggleWF(this)">
+        <div><div class="wf-trigger-label">Days 1–7</div><div class="wf-trigger-title">Exposure Scan</div></div>
+        <span class="wf-icon">+</span>
+      </button>
+      <div class="wf-body"><ul>
+        <li>Identify essential monthly income needs</li>
+        <li>List current income sources and obligations</li>
+        <li>List possible costs, tools, insurance, time, and vehicle exposure</li>
+        <li>Write down what could go wrong financially</li>
+      </ul></div>
+    </div>
+    <div class="wf-item">
+      <button class="wf-trigger" onclick="toggleWF(this)">
+        <div><div class="wf-trigger-label">Days 8–14</div><div class="wf-trigger-title">Requirements Check</div></div>
+        <span class="wf-icon">+</span>
+      </button>
+      <div class="wf-body"><ul>
+        <li>Identify licensing, certification, insurance, permit, and local-rule questions</li>
+        <li>Verify through official sources or qualified professionals</li>
+        <li>Identify what work is clearly not appropriate yet</li>
+        <li>Note any employer or agreement boundaries</li>
+      </ul></div>
+    </div>
+    <div class="wf-item">
+      <button class="wf-trigger" onclick="toggleWF(this)">
+        <div><div class="wf-trigger-label">Days 15–21</div><div class="wf-trigger-title">Demand and Trust Review</div></div>
+        <span class="wf-icon">+</span>
+      </button>
+      <div class="wf-body"><ul>
+        <li>Identify where legitimate opportunities could come from</li>
+        <li>Review whether demand can be created ethically</li>
+        <li>Identify reputation risks</li>
+        <li>Avoid any customer-facing promise that exceeds skill, authority, or verification</li>
+      </ul></div>
+    </div>
+    <div class="wf-item">
+      <button class="wf-trigger" onclick="toggleWF(this)">
+        <div><div class="wf-trigger-label">Days 22–30</div><div class="wf-trigger-title">Go / No-Go Decision</div></div>
+        <span class="wf-icon">+</span>
+      </button>
+      <div class="wf-body"><ul>
+        <li>Choose Go Small, Prepare More, Pause, or No-Go</li>
+        <li>Define the next responsible action</li>
+        <li>Define the stop rule: when would you halt or delay further?</li>
+        <li>Decide whether to return to Phase 4, 5, 6, or 7 before taking business action</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <!-- COMPLETION CHECKLIST -->
+  <div class="phase-section-divider">Phase 8 Completion Checklist</div>
+  <p style="font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:4px;max-width:580px">Before treating this phase as complete, confirm the following honestly.</p>
+  <p style="font-size:12px;color:var(--gray-400);margin-bottom:16px">Do not mark this complete if a responsible decision has not been made.</p>
+  <div class="phase-checklist-area">
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I understand the difference between business interest and business readiness</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I know what income, savings, debt, or household exposure could be affected</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I know that requirements must be verified before independent action</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I understand that AI output must be human-verified for legal, licensing, insurance, tax, and safety questions</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I can identify where legitimate demand could come from</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I can define the smallest responsible business test or decide not to test yet</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I know what would make the move Go, Prepare More, Pause, or No-Go</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I understand that protecting reputation matters more than forcing momentum</div>
+    </div>
+  </div>
+
+  <!-- OUTCOME -->
+  <div class="phase-section-divider">Phase 8 Outcome</div>
+  <div class="phase-callout neutral">
+    <p>By the end of this phase, you should know: whether the business layer is ready for a small verified test, whether more preparation is needed, whether compliance, capital, income replacement, or demand creation is the main blocker, what risk must be reduced before action, what official sources or qualified professionals must be consulted, and what your next responsible business-readiness move should be.</p>
+  </div>
+
+  <!-- SYSTEM UPDATE NOTE -->
+  <div class="phase-note">
+    <div class="phase-note-label">Phase 8 System Update Note</div>
+    <div class="phase-note-text">This phase should stay aligned with HVAC compliance realities, local requirements, insurance considerations, ethical boundaries, customer responsibility, AI verification limits, demand creation risks, and business-readiness standards. Future update passes may refine this phase if licensing interpretations, insurance expectations, market conditions, AI workflows, local rules, or common independent-work risks materially change. All updates are included with your access.</div>
+  </div>
+
+  <!-- FINAL DECISION -->
+  <div class="phase-section-divider">Final Decision</div>
+  <p style="font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:4px;max-width:580px">Choose the option that best reflects your responsible next move.</p>
+  <p style="font-size:12px;color:var(--gray-400);margin-bottom:16px">A responsible pause is better than a risky launch. A verified small test is better than a fantasy business plan.</p>
+  <div class="position-options" id="p8Decision">
+    <div class="position-opt" onclick="selectP8Decision(this)">
+      <div class="position-opt-title">Go Small</div>
+      <div class="position-opt-desc">Proceed only with a verified, low-risk, controlled test that is legal, ethical, and small enough to stop.</div>
+    </div>
+    <div class="position-opt" onclick="selectP8Decision(this)">
+      <div class="position-opt-title">Prepare More</div>
+      <div class="position-opt-desc">Strengthen requirements, savings, skill, demand, or systems before taking any business action.</div>
+    </div>
+    <div class="position-opt" onclick="selectP8Decision(this)">
+      <div class="position-opt-title">Pause</div>
+      <div class="position-opt-desc">Do not take business action yet. Protect income, reputation, and relationships first.</div>
+    </div>
+    <div class="position-opt" onclick="selectP8Decision(this)">
+      <div class="position-opt-title">Return to Earlier Phase</div>
+      <div class="position-opt-desc">Revisit stability, income expansion, business layer, or scale path before pursuing independent work.</div>
+    </div>
+  </div>
+  <div class="phase-callout neutral" style="margin-top:16px">
+    <p>The next move is not bigger. The next move is clearer.</p>
+  </div>
+
+  <!-- COMPLETION GATE -->
+  <div class="completion-gate" style="margin-top:32px">
+    <div class="section-label" style="margin-bottom:16px;text-align:center">Extension Layer Complete</div>
+    <p class="completion-statement">"Readiness is not measured by ambition. It is measured by survivability if the move earns nothing for a period of time."</p>
+    <div class="completion-actions">
+      <a href="/access" class="btn-outline">← Return to Dashboard</a>
+      <span class="btn-disabled">Extension Layer Complete ✓</span>
+    </div>
+  </div>
+
+  <!-- PROTECTED UTILITY FOOTER -->
+  <footer class="protected-utility-footer">
+    <div class="protected-utility-links">
+      <a href="/terms">Terms</a>
+      <a href="/privacy">Privacy</a>
+      <a href="/refund-policy">Refund Policy</a>
+      <a href="/digital-delivery">Digital Delivery</a>
+      <a href="/disclaimer">Disclaimer</a>
+      <a href="/support">Support</a>
+    </div>
+    <p class="protected-utility-note">Betrix Business Systems provides structured informational and execution guidance. This system does not provide legal, financial, tax, insurance, licensing, employment, or technical trade advice.</p>
+  </footer>
+
+</div><!-- /phase-layout -->
+
+<script src="/assets/app.js" defer></script>
+
+<!-- Memberstack test-mode install -->
+<script type="module">
+  import memberstackDOM from 'https://cdn.jsdelivr.net/npm/@memberstack/dom@latest/+esm';
+  const memberstack = memberstackDOM.init({
+    publicKey: "pk_sb_b090b30f6ecf589f710e",
+  });
+</script>
+
+</body>
+</html>
+```
+
+---
+
+File 12 of 19 complete. Waiting for **NEXT FILE**.

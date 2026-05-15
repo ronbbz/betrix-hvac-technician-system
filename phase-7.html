@@ -1,0 +1,591 @@
+**`phase-7.html`**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phase 7 — Scale Path | Betrix HVAC Technician Business System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body style="padding-top:60px">
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo">Betrix <span>Business Systems</span></div>
+    <div class="phase-nav-label">Phase 7 — Scale Path</div>
+    <div style="display:flex;align-items:center;gap:0">
+      <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">Dark</button>
+      <a href="/access" class="nav-cta">← Dashboard</a>
+    </div>
+  </div>
+</nav>
+
+<div class="phase-layout">
+
+  <!-- PHASE HEADER -->
+  <div class="phase-header">
+    <div class="phase-eyebrow">Phase 7 of 7</div>
+    <h1 class="phase-title">Scale Path</h1>
+    <div class="phase-objective">Explore long-term positioning, specialization, systems, and how stronger HVAC paths compound over time.</div>
+    <p class="phase-desc">This phase is about scale in the full sense of the word — not just "getting bigger," but becoming more leveraged, more intentional, and more durable over time. Digital system. Not HVAC training. Not a certification program.</p>
+  </div>
+
+  <!-- OVERVIEW CARDS -->
+  <div class="overview-grid">
+    <div class="overview-card">
+      <div class="overview-card-label">What You Will Understand</div>
+      <div class="overview-card-title">What scale actually means in HVAC</div>
+      <ul>
+        <li>What scale actually means in HVAC</li>
+        <li>How specialization, systems, and reputation change long-term outcomes</li>
+        <li>Why compounding matters more than random intensity</li>
+        <li>How workers, independents, and operators scale differently</li>
+        <li>What a strong long-term path can begin to look like without forcing fantasy</li>
+      </ul>
+    </div>
+    <div class="overview-card">
+      <div class="overview-card-label">Decisions You Will Make</div>
+      <div class="overview-card-title">Your scale path awareness</div>
+      <ul>
+        <li>Your scale path scorecard results</li>
+        <li>Which scale lever to focus on next</li>
+        <li>Your most responsible compounding move</li>
+        <li>Your final system decision — continue, revisit, or pause</li>
+        <li>Whether the path is structured enough to act on</li>
+      </ul>
+    </div>
+    <div class="overview-card">
+      <div class="overview-card-label">Before Completing the System</div>
+      <div class="overview-card-title">What must be confirmed</div>
+      <ul>
+        <li>All core sections reviewed</li>
+        <li>Scorecard completed honestly</li>
+        <li>Strategy builder selections made</li>
+        <li>Final review standard confirmed</li>
+        <li>Final system decision made</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ORIENTATION -->
+  <div class="phase-section-divider">Phase 7 Orientation</div>
+  <div class="phase-callout">
+    <p><strong>Before You Continue: This phase is about scale in the full sense of the word — not just "getting bigger," but becoming more leveraged, more intentional, and more durable over time.</strong></p>
+    <p>Phase 6 introduced the business layer. Phase 7 shows how the full path can compound through specialization, systems, reputation, repeatability, and stage-appropriate scale. By this point, you should understand fit, entry, first income, early stability, income expansion, and the business layer. Phase 7 is where everything starts to connect into a bigger long-term picture.</p>
+    <p>The question now becomes: how does HVAC compound into a stronger life path over time?</p>
+  </div>
+
+  <div class="phase-sections" style="margin-bottom:16px">
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">How to Use This Phase</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">If you are early in the HVAC path, read this phase to understand how the previous phases compound over time. Do not use this phase as permission to skip the earlier sequence.<br><br>If you already have trade, income, or operator exposure, use this phase as a scale-readiness audit. Ask whether your current growth is becoming more repeatable, more trusted, more systemized, and more durable — or whether it is simply becoming busier.</div>
+    </div>
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">Phase 7 Operating Standard</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">The goal is not to become bigger. The goal is to become more durable, more repeatable, more trusted, and more leveraged over time.<br><br><strong>Decision logic: scale should reduce chaos, not multiply it. Real scale is created when skill, trust, systems, lane positioning, and responsibility compound in the correct order.</strong><br><br>Scale readiness varies by skill depth, reputation, lane positioning, systems, customer trust, market conditions, capacity, and timing.</div>
+    </div>
+  </div>
+
+  <div class="phase-callout warning" style="margin-top:0">
+    <p>Scale should feel more intentional over time, not more chaotic. If "scale" is making you want to skip steps, slow down — scale is strongest when it is earned through compounding, not imagined through ambition alone.</p>
+  </div>
+
+  <!-- CORE SECTIONS -->
+  <div class="phase-section-divider">Core Sections</div>
+  <div class="phase-sections">
+
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">What Scale Actually Means</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        Scale does not only mean building a large company. In HVAC, scale can mean increasing your income ceiling over time, deepening your specialization, moving into stronger lanes, building systems that reduce friction, creating repeatability in your work or operations, and turning your effort into more leverage — not just more exhaustion.<br><br>
+        <strong>Scale is what happens when skill, trust, positioning, and systems begin compounding together.</strong><br><br>
+        The core question: <em>What part of my HVAC path can become more repeatable, more trusted, or more valuable without creating more chaos?</em><br><br>
+        Scale matters even if you stay on the employee path, because long-term leverage still exists there. A stronger path can still mean better compensation, stronger specialization, more negotiating power, better work environments, and more control over the direction of your career. Scale is not only about headcount — it is about compounding advantage.
+      </div>
+    </div>
+
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">The Three Main Forms of HVAC Scale</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        <strong>1. Personal Scale</strong> — your own skill, judgment, trust, and earnings continue compounding.<br><br>
+        <strong>2. Independent Scale</strong> — you begin turning your own labor and reputation into controlled independent income, repeat work, and stronger leverage.<br><br>
+        <strong>3. Business / Operator Scale</strong> — you move beyond only your own labor and begin thinking in terms of systems, capacity, people, repeatability, and long-term structure.<br><br>
+        <strong>The right form of scale depends on the path you are actually building — not the identity you want to claim.</strong><br><br>
+        A useful check: am I still mainly building personal capability? Am I beginning to understand independent leverage? Am I truly ready for operator systems, or am I just attracted to the idea? Your real answer is more useful than your aspirational answer.
+      </div>
+    </div>
+
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">Specialization Is a Scale Multiplier</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        General skill gets you moving. Specialization can change your income ceiling, your usefulness, your trust level, your difficulty to replace, and your reputation in the market. This does not mean you should force a niche too early. It means you should pay attention to where your value compounds fastest.<br><br>
+        <strong>Scale often accelerates when your usefulness becomes more specific, more trusted, and more difficult to substitute.</strong><br><br>
+        Healthy specialization usually comes from repeated exposure to higher-value work, pattern recognition over time, real-world strengths becoming obvious, and stronger trust in a narrower but more valuable lane. Unhealthy specialization is usually branding without foundation.
+      </div>
+    </div>
+
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">Systems Create Real Scale</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        At some point, growth without systems starts breaking down. Systems can mean repeatable ways of doing work, cleaner communication, better follow-up, more consistent customer experience, more predictable operations, and less dependence on memory, chaos, or improvisation.<br><br>
+        For a worker, systems may mean how you organize and execute your own work more consistently. For an independent path, systems may mean how work is quoted, scheduled, communicated, and repeated. For an operator path, systems become essential.<br><br>
+        <strong>Scale is unstable when the person is carrying everything manually.</strong>
+      </div>
+    </div>
+
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">Reputation Compounds Faster Than Most People Think</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        Long-term scale is heavily shaped by reputation. Reputation is not just image — it is the repeated memory of your value. In HVAC, reputation can compound through consistent reliability, quality work, strong follow-through, fewer preventable mistakes, trust with customers, employers, or partners, and repeat exposure in the right environments.<br><br>
+        <strong>The stronger your reputation becomes, the less every opportunity has to start from zero.</strong><br><br>
+        Once trust and reputation exist, referrals become easier, stronger opportunities open, better lane access follows, and repeat work increases. This is one reason why long-term scale often looks slow at first and then stronger later.
+      </div>
+    </div>
+
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">Scaling as a Worker vs Independent vs Operator</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        <strong>Scaling as a Worker</strong> may look like stronger specialization, better compensation, better long-term positioning, and moving into harder-to-replace roles.<br><br>
+        <strong>Scaling as an Independent</strong> may look like repeat customers, more controlled work selection, stronger pricing confidence, cleaner workflow systems, and more leverage from reputation and process.<br><br>
+        <strong>Scaling as an Operator</strong> may look like systems instead of memory, capacity beyond individual labor, stronger customer flow, team structure, and repeatable delivery.<br><br>
+        <strong>Scale looks different depending on the layer you are actually in.</strong> A worker who tries to think like a large operator too early usually loses contact with the real next step. An independent who refuses systems usually caps out. An operator without enough quality control creates chaos. Scale works best when it matches the stage you are actually in.
+      </div>
+    </div>
+
+    <div class="ps-item">
+      <button class="ps-trigger" onclick="toggleSection(this)">
+        <span class="ps-trigger-text">What Long-Term Compounding Looks Like</span>
+        <span class="ps-icon">+</span>
+      </button>
+      <div class="ps-body">
+        A strong HVAC path often compounds like this: fit becomes commitment, entry becomes first income, first income becomes exposure, exposure becomes usefulness, usefulness becomes trust, trust becomes better opportunity, better opportunity becomes stronger income and leverage, stronger leverage becomes scale.<br><br>
+        <strong>This is why sequence matters so much. Scale is not separate from the earlier phases. It is built on them.</strong>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FAILURE MAP -->
+  <div class="phase-section-divider">Failure Map — Why Scale Breaks</div>
+  <div style="border:1px solid var(--border);margin-bottom:0;overflow-x:auto">
+    <table class="failure-table">
+      <thead>
+        <tr><th>Failure Point</th><th>What It Looks Like</th><th>System Correction</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Chasing bigness</td><td>You want more jobs, money, customers, or responsibility without stronger structure</td><td>Scale only what is already stable enough to repeat</td></tr>
+        <tr><td>Forcing specialization too early</td><td>You pick a niche before real exposure shows where your value compounds</td><td>Let specialization emerge from repeated value and demand signals</td></tr>
+        <tr><td>Confusing intensity with leverage</td><td>You work harder but do not become more repeatable, trusted, or differentiated</td><td>Build leverage through systems, skill depth, reputation, and better positioning</td></tr>
+        <tr><td>Scaling chaos</td><td>You add more activity to weak processes</td><td>Fix the system before increasing volume</td></tr>
+        <tr><td>Overestimating operator readiness</td><td>You think bigger before understanding quality control, customer flow, follow-up, and capacity</td><td>Match scale moves to your real stage</td></tr>
+        <tr><td>Ignoring reputation</td><td>You chase growth while trust, quality, or follow-through are inconsistent</td><td>Treat reputation as a scale asset</td></tr>
+        <tr><td>Copying someone else's path</td><td>You model your next move on another person's stage instead of your own</td><td>Choose scale based on your current layer: worker, independent, or operator</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="phase-callout neutral" style="margin-top:16px">
+    <p>People usually distort scale by treating it as size instead of structure. The right question is not "How do I get huge?" — it is "What am I building that compounds correctly?"</p>
+  </div>
+
+  <!-- SCORECARD -->
+  <div class="phase-section-divider">Scale Path Scorecard</div>
+  <p style="font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:4px;max-width:580px">Rate your current position honestly. Score: <strong>2 = strong signal</strong> &nbsp;·&nbsp; <strong>1 = possible signal</strong> &nbsp;·&nbsp; <strong>0 = caution zone</strong></p>
+  <p style="font-size:12px;color:var(--gray-400);margin-bottom:16px">A low score on any item shows where your scale awareness needs more work before expanding.</p>
+  <div class="decision-area" id="p7Scorecard">
+    <div class="score-row"><div class="score-q">I understand that scale is not only about getting bigger.</div><div class="score-btns"><button class="s-btn" onclick="p7Btn(this,2)">2</button><button class="s-btn" onclick="p7Btn(this,1)">1</button><button class="s-btn" onclick="p7Btn(this,0)">0</button></div></div>
+    <div class="score-row"><div class="score-q">I know whether my current path is worker scale, independent scale, or operator scale.</div><div class="score-btns"><button class="s-btn" onclick="p7Btn(this,2)">2</button><button class="s-btn" onclick="p7Btn(this,1)">1</button><button class="s-btn" onclick="p7Btn(this,0)">0</button></div></div>
+    <div class="score-row"><div class="score-q">I understand how specialization could eventually increase my value.</div><div class="score-btns"><button class="s-btn" onclick="p7Btn(this,2)">2</button><button class="s-btn" onclick="p7Btn(this,1)">1</button><button class="s-btn" onclick="p7Btn(this,0)">0</button></div></div>
+    <div class="score-row"><div class="score-q">I understand that systems create repeatability.</div><div class="score-btns"><button class="s-btn" onclick="p7Btn(this,2)">2</button><button class="s-btn" onclick="p7Btn(this,1)">1</button><button class="s-btn" onclick="p7Btn(this,0)">0</button></div></div>
+    <div class="score-row"><div class="score-q">I understand that reputation is a long-term scale asset.</div><div class="score-btns"><button class="s-btn" onclick="p7Btn(this,2)">2</button><button class="s-btn" onclick="p7Btn(this,1)">1</button><button class="s-btn" onclick="p7Btn(this,0)">0</button></div></div>
+    <div class="score-row"><div class="score-q">I know what is already stable enough to repeat.</div><div class="score-btns"><button class="s-btn" onclick="p7Btn(this,2)">2</button><button class="s-btn" onclick="p7Btn(this,1)">1</button><button class="s-btn" onclick="p7Btn(this,0)">0</button></div></div>
+    <div class="score-row"><div class="score-q">I know what would create more chaos if scaled too soon.</div><div class="score-btns"><button class="s-btn" onclick="p7Btn(this,2)">2</button><button class="s-btn" onclick="p7Btn(this,1)">1</button><button class="s-btn" onclick="p7Btn(this,0)">0</button></div></div>
+    <div class="score-row"><div class="score-q">I can identify one responsible long-term leverage move for my current stage.</div><div class="score-btns"><button class="s-btn" onclick="p7Btn(this,2)">2</button><button class="s-btn" onclick="p7Btn(this,1)">1</button><button class="s-btn" onclick="p7Btn(this,0)">0</button></div></div>
+    <div class="score-total-bar">
+      <div class="score-total-label">Current score</div>
+      <div class="score-total-val" id="p7Score">—</div>
+    </div>
+    <div class="score-interp" id="p7Interp"></div>
+  </div>
+
+  <!-- SCALE PATH TRACKER -->
+  <div class="phase-section-divider">Scale Path Tracker</div>
+  <p style="font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:4px;max-width:580px">Use this tracker to identify where long-term compounding may come from. Scale readiness varies by skill depth, reputation, lane positioning, systems, customer trust, market conditions, capacity, and timing.</p>
+  <p style="font-size:12px;color:var(--gray-400);margin-bottom:16px">Review each lever honestly before increasing volume, responsibility, or complexity.</p>
+  <div style="border:1px solid var(--border);overflow-x:auto;margin-bottom:0">
+    <table class="failure-table">
+      <thead>
+        <tr><th>Scale Lever</th><th>What to Check</th><th>Next Move</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Specialization</strong></td><td>Where is my value becoming more specific and harder to replace?</td><td>Watch for repeated demand, stronger skill signals, and higher-value problems</td></tr>
+        <tr><td><strong>Systems</strong></td><td>What work, communication, follow-up, or operations can become more repeatable?</td><td>Document the steps that reduce friction and mistakes</td></tr>
+        <tr><td><strong>Reputation</strong></td><td>Where is trust starting to compound?</td><td>Protect quality, follow-through, and consistency</td></tr>
+        <tr><td><strong>Lane Positioning</strong></td><td>Which environment is increasing my long-term leverage?</td><td>Compare current lane against better compounding opportunities</td></tr>
+        <tr><td><strong>Capacity</strong></td><td>Am I personally carrying everything manually?</td><td>Identify what must become repeatable before more volume or responsibility is added</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- STRATEGY BUILDER -->
+  <div class="phase-section-divider">Build Your Scale Path Awareness</div>
+  <p style="font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:4px;max-width:580px">Select your current situation across all three areas. If you still think scale is mainly about getting bigger fast, this phase is not complete yet.</p>
+  <p style="font-size:12px;color:var(--gray-400);margin-bottom:20px">Choose based on where you actually are — not where you want to be.</p>
+
+  <div style="margin-bottom:8px">
+    <div class="section-label" style="margin-bottom:10px">My strongest long-term scale path likely comes from</div>
+    <div class="position-options" id="p7Source">
+      <div class="position-opt" onclick="selectP7(this,'source')">
+        <div class="position-opt-title">Deeper specialization</div>
+        <div class="position-opt-desc">My value is becoming more specific and harder to replace in a particular area.</div>
+      </div>
+      <div class="position-opt" onclick="selectP7(this,'source')">
+        <div class="position-opt-title">Stronger lane positioning</div>
+        <div class="position-opt-desc">The environment I am in is compounding my leverage more than other options.</div>
+      </div>
+      <div class="position-opt" onclick="selectP7(this,'source')">
+        <div class="position-opt-title">Better systems</div>
+        <div class="position-opt-desc">Making my work more repeatable, consistent, and less dependent on improvisation.</div>
+      </div>
+      <div class="position-opt" onclick="selectP7(this,'source')">
+        <div class="position-opt-title">Stronger reputation</div>
+        <div class="position-opt-desc">Trust, quality, and follow-through are beginning to create compound advantages.</div>
+      </div>
+      <div class="position-opt" onclick="selectP7(this,'source')">
+        <div class="position-opt-title">More repeatable value</div>
+        <div class="position-opt-desc">The problems I solve are becoming more predictable and consistent.</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-bottom:8px;margin-top:20px">
+    <div class="section-label" style="margin-bottom:10px">The form of scale most realistic for me right now is</div>
+    <div class="position-options" id="p7Form">
+      <div class="position-opt" onclick="selectP7(this,'form')">
+        <div class="position-opt-title">Stronger worker leverage</div>
+        <div class="position-opt-desc">Better specialization, compensation, positioning, and harder-to-replace roles.</div>
+      </div>
+      <div class="position-opt" onclick="selectP7(this,'form')">
+        <div class="position-opt-title">Controlled independent leverage</div>
+        <div class="position-opt-desc">Repeat work, stronger pricing, cleaner systems, and more controlled opportunity selection.</div>
+      </div>
+      <div class="position-opt" onclick="selectP7(this,'form')">
+        <div class="position-opt-title">Long-term operator awareness</div>
+        <div class="position-opt-desc">Understanding systems, capacity, customer flow, and operational repeatability at the right pace.</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:20px">
+    <div class="section-label" style="margin-bottom:10px">My next responsible compounding move should focus on</div>
+    <div class="position-options" id="p7Move">
+      <div class="position-opt" onclick="selectP7(this,'move')">
+        <div class="position-opt-title">Increasing leverage without creating chaos</div>
+        <div class="position-opt-desc">Compounding what is already stable before adding volume, complexity, or responsibility.</div>
+      </div>
+      <div class="position-opt" onclick="selectP7(this,'move')">
+        <div class="position-opt-title">Building systems where repetition matters</div>
+        <div class="position-opt-desc">Documenting, standardizing, and reducing friction in repeatable parts of the work.</div>
+      </div>
+      <div class="position-opt" onclick="selectP7(this,'move')">
+        <div class="position-opt-title">Following the path where my value compounds the fastest</div>
+        <div class="position-opt-desc">Directing effort toward the lane, skill, or environment where growth is actually accelerating.</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="border:1px solid var(--border);padding:20px 24px;margin-top:16px;background:var(--gray-50)">
+    <div style="font-family:var(--font-head);font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--gray-400);margin-bottom:8px">Complete This Statement</div>
+    <p id="p7StatementText" style="font-size:15px;color:var(--gray-400);font-style:italic;font-weight:500;line-height:1.7;margin:0">Select options above to generate your strategy statement.</p>
+    <div style="font-size:12px;color:var(--gray-400);margin-top:8px">Sample Completed Statement: "My strongest long-term scale path likely comes from stronger reputation, the form of scale most realistic for me right now is controlled independent leverage, and my next responsible compounding move should focus on following the path where my value compounds the fastest."</div>
+  </div>
+
+  <!-- QUESTIONS BANK -->
+  <div class="phase-section-divider">Templates and Questions for Scale Path Awareness</div>
+  <p style="font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:16px;max-width:580px">Use these questions before making a long-term move around specialization, independent work, systems, larger volume, or operator growth.</p>
+  <div class="q-bank">
+    <div class="qb-item">
+      <button class="qb-trigger" onclick="toggleQB(this)">
+        <span class="qb-trigger-text">Questions to Ask Yourself</span>
+        <span class="qb-icon">+</span>
+      </button>
+      <div class="qb-body"><ul>
+        <li>Am I trying to scale something stable, or am I trying to scale chaos?</li>
+        <li>Which part of my path is becoming more trusted, repeatable, or valuable?</li>
+        <li>What would break if I added more volume, customers, responsibility, or complexity?</li>
+        <li>Am I building worker leverage, independent leverage, or operator leverage?</li>
+        <li>What system would reduce friction if I had to repeat this process again?</li>
+        <li>Is my reputation strong enough to support the next layer?</li>
+      </ul></div>
+    </div>
+    <div class="qb-item">
+      <button class="qb-trigger" onclick="toggleQB(this)">
+        <span class="qb-trigger-text">Questions to Ask a Mentor, Operator, or Experienced Technician</span>
+        <span class="qb-icon">+</span>
+      </button>
+      <div class="qb-body"><ul>
+        <li>What should someone systemize before trying to grow?</li>
+        <li>What mistakes do people make when they try to scale too early?</li>
+        <li>What signals show that specialization is becoming valuable?</li>
+        <li>How does reputation compound in this trade?</li>
+        <li>What separates durable growth from chaotic growth?</li>
+        <li>What should someone prove before adding people, customers, or larger responsibility?</li>
+      </ul></div>
+    </div>
+    <div class="qb-item">
+      <button class="qb-trigger" onclick="toggleQB(this)">
+        <span class="qb-trigger-text">Scale Decision Prompt</span>
+        <span class="qb-icon">+</span>
+      </button>
+      <div class="qb-body">
+        <p style="font-size:14px;color:var(--gray-600);line-height:1.7;margin-bottom:12px">Use this before making any bigger move. If the answer is "harder to control," tighten the system before expanding.</p>
+        <div style="border-left:3px solid var(--black);padding:16px 20px;background:var(--gray-50);font-size:16px;color:var(--black);line-height:1.8;font-weight:600">"Will this make the path more repeatable and durable, or just bigger and harder to control?"</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 30-DAY WORKFLOW -->
+  <div class="phase-section-divider">30-Day Scale Awareness Workflow</div>
+  <p style="font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:4px;max-width:580px">This workflow is not about scaling a business in 30 days. It is about identifying the next responsible long-term leverage move.</p>
+  <p style="font-size:12px;color:var(--gray-400);margin-bottom:16px">The goal is not speed. The goal is durable compounding.</p>
+  <div class="workflow-list">
+    <div class="wf-item">
+      <button class="wf-trigger" onclick="toggleWF(this)">
+        <div><div class="wf-trigger-label">Days 1–7</div><div class="wf-trigger-title">Stage Review</div></div>
+        <span class="wf-icon">+</span>
+      </button>
+      <div class="wf-body"><ul>
+        <li>Identify your current layer: worker, independent, or operator awareness</li>
+        <li>Write down what is already stable</li>
+        <li>Write down what would break if you added more complexity</li>
+      </ul></div>
+    </div>
+    <div class="wf-item">
+      <button class="wf-trigger" onclick="toggleWF(this)">
+        <div><div class="wf-trigger-label">Days 8–14</div><div class="wf-trigger-title">Compounding Signal Review</div></div>
+        <span class="wf-icon">+</span>
+      </button>
+      <div class="wf-body"><ul>
+        <li>Identify where your value is increasing: skill, reputation, lane, systems, or customer trust</li>
+        <li>Notice what people rely on you for repeatedly</li>
+        <li>Identify one pattern that could become more valuable over time</li>
+      </ul></div>
+    </div>
+    <div class="wf-item">
+      <button class="wf-trigger" onclick="toggleWF(this)">
+        <div><div class="wf-trigger-label">Days 15–21</div><div class="wf-trigger-title">System Friction Review</div></div>
+        <span class="wf-icon">+</span>
+      </button>
+      <div class="wf-body"><ul>
+        <li>Write down repeated tasks, communication issues, customer friction, jobsite friction, or follow-up gaps</li>
+        <li>Identify what could be documented, standardized, or improved</li>
+        <li>Do not add volume until the weak points are visible</li>
+      </ul></div>
+    </div>
+    <div class="wf-item">
+      <button class="wf-trigger" onclick="toggleWF(this)">
+        <div><div class="wf-trigger-label">Days 22–30</div><div class="wf-trigger-title">Scale Path Decision</div></div>
+        <span class="wf-icon">+</span>
+      </button>
+      <div class="wf-body"><ul>
+        <li>Choose one current focus: deepen specialization, strengthen reputation, improve systems, increase lane leverage, prepare for independent leverage later, or delay scale and strengthen earlier phases</li>
+        <li>Write your scale path statement and confirm it holds up under honest review</li>
+        <li>If nothing is clear yet, return to the scorecard and identify the gap</li>
+      </ul></div>
+    </div>
+  </div>
+
+  <!-- COMPLETION CHECKLIST -->
+  <div class="phase-section-divider">Phase 7 Completion Checklist</div>
+  <p style="font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:4px;max-width:580px">Before treating the system as complete, confirm the following. If you cannot answer these, revisit the earlier phases before assuming the path is mature.</p>
+  <p style="font-size:12px;color:var(--gray-400);margin-bottom:16px">This is the final phase checkpoint. Complete it honestly.</p>
+  <div class="phase-checklist-area">
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I understand the difference between growth and scale</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I know whether my current path is worker, independent, or operator-oriented</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I understand how specialization, systems, and reputation affect long-term leverage</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I know what is stable enough to repeat</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I know what would create chaos if expanded too soon</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I can explain my next responsible scale move in one clear sentence</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">I understand that the full seven-phase path is meant to create structured execution, not fantasy acceleration</div>
+    </div>
+  </div>
+
+  <!-- PHASE 7 OUTCOME -->
+  <div class="phase-section-divider">Phase 7 Outcome</div>
+  <div class="phase-callout neutral">
+    <p>By the end of this phase, you should know what scale actually means in HVAC, how specialization, systems, and reputation affect long-term results, how different kinds of scale work, why compounding matters more than random intensity, what your most realistic scale path may be right now, and what your next long-term leverage move should focus on.</p>
+    <p>If you still think scale is just a bigger version of effort, revisit this phase before treating your path as mature.</p>
+  </div>
+
+  <!-- SYSTEM UPDATE NOTE -->
+  <div class="phase-note">
+    <div class="phase-note-label">Phase 7 System Update Note</div>
+    <div class="phase-note-text">This phase should stay aligned with real HVAC scale patterns, specialization trends, operator requirements, system-building needs, reputation dynamics, and long-term leverage risks. Future update passes may refine this phase if industry conditions, technology, customer acquisition patterns, labor realities, or scale-path risks materially change. All updates are included with your access.</div>
+  </div>
+
+  <!-- SYSTEM COMPLETION -->
+  <div class="phase-section-divider">System Completion</div>
+  <div style="border:1px solid var(--border);padding:40px;text-align:center;margin-bottom:0">
+    <div class="phase-eyebrow" style="margin-bottom:16px">HVAC Technician Business System — V1</div>
+    <h2 style="font-family:var(--font-head);font-size:clamp(28px,3.5vw,40px);font-weight:800;letter-spacing:-0.025em;color:var(--black);margin-bottom:16px;line-height:1.1">You have completed the core Betrix HVAC Technician Business System.</h2>
+    <p style="font-size:16px;color:var(--gray-600);line-height:1.75;max-width:560px;margin:0 auto 28px">This does not mean the journey is finished. It means the path is now structured.</p>
+    <div style="display:flex;flex-direction:column;gap:10px;max-width:480px;margin:0 auto 28px;text-align:left">
+      <div style="font-size:14px;color:var(--black);padding-left:20px;position:relative;line-height:1.5"><span style="position:absolute;left:0;color:var(--gray-400)">—</span> Whether HVAC fits your real life</div>
+      <div style="font-size:14px;color:var(--black);padding-left:20px;position:relative;line-height:1.5"><span style="position:absolute;left:0;color:var(--gray-400)">—</span> How to enter</div>
+      <div style="font-size:14px;color:var(--black);padding-left:20px;position:relative;line-height:1.5"><span style="position:absolute;left:0;color:var(--gray-400)">—</span> How to reach first income</div>
+      <div style="font-size:14px;color:var(--black);padding-left:20px;position:relative;line-height:1.5"><span style="position:absolute;left:0;color:var(--gray-400)">—</span> How to stabilize and expand</div>
+      <div style="font-size:14px;color:var(--black);padding-left:20px;position:relative;line-height:1.5"><span style="position:absolute;left:0;color:var(--gray-400)">—</span> How the business layer works</div>
+      <div style="font-size:14px;color:var(--black);padding-left:20px;position:relative;line-height:1.5"><span style="position:absolute;left:0;color:var(--gray-400)">—</span> How long-term scale compounds</div>
+    </div>
+    <p style="font-size:17px;font-weight:700;color:var(--black);letter-spacing:-0.01em">The next move is not more random research. The next move is execution.</p>
+  </div>
+
+  <!-- FINAL DECISION -->
+  <div class="phase-section-divider">Final System Decision</div>
+  <p style="font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:4px;max-width:580px">Choose the statement that best matches your real position right now.</p>
+  <p style="font-size:12px;color:var(--gray-400);margin-bottom:16px">A clear pause is better than false momentum.</p>
+  <div class="position-options" id="p7Decision">
+    <div class="position-opt" onclick="selectP7Decision(this)">
+      <div class="position-opt-title">Option A — Continue the HVAC path</div>
+      <div class="position-opt-desc">HVAC still appears aligned, and I know my next responsible move.</div>
+    </div>
+    <div class="position-opt" onclick="selectP7Decision(this)">
+      <div class="position-opt-title">Option B — Revisit an earlier phase</div>
+      <div class="position-opt-desc">I need to go back to fit, entry, first income, stability, income expansion, or business-layer readiness before moving forward.</div>
+    </div>
+    <div class="position-opt" onclick="selectP7Decision(this)">
+      <div class="position-opt-title">Option C — Pause or compare another path</div>
+      <div class="position-opt-desc">HVAC may not be the right path for my current situation. A clear pause is better than false momentum.</div>
+    </div>
+  </div>
+
+  <!-- FINAL REVIEW STANDARD -->
+  <div class="phase-section-divider">Final Review Standard</div>
+  <p style="font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:4px;max-width:580px">Before treating this system as complete, review your answers from each phase one more time. The goal is not to reread everything passively — the goal is to confirm that your next move still makes sense after seeing the full path.</p>
+  <p style="font-size:12px;color:var(--gray-400);margin-bottom:16px">If any answer feels weak, return to that phase before taking your next major step.</p>
+  <div class="phase-checklist-area">
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">Did Phase 1 confirm HVAC still fits your real life?</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">Did Phase 2 clarify your entry path?</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">Did Phase 3 define your first-income strategy?</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">Did Phase 4 show what stability requires?</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">Did Phase 5 clarify how income can expand?</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">Did Phase 6 explain the business layer responsibly?</div>
+    </div>
+    <div class="phase-check-row" onclick="toggleCheck(this)">
+      <div class="pcb"></div>
+      <div class="phase-check-text">Did Phase 7 show what scale should and should not mean?</div>
+    </div>
+  </div>
+  <div class="phase-callout neutral" style="margin-top:16px">
+    <p><strong>A structured path is only useful if it changes the next decision.</strong></p>
+  </div>
+
+  <!-- COMPLETION GATE -->
+  <div class="completion-gate" style="margin-top:32px">
+    <div class="section-label" style="margin-bottom:16px;text-align:center">Phase 7 Complete — Core System Complete</div>
+    <p class="completion-statement">"The path is structured. The next move is execution."</p>
+    <p style="font-size:13px;color:var(--gray-400);margin-bottom:28px;text-align:center">If you are evaluating independent work, business exposure, capital risk, compliance, or a small controlled test, continue to the <strong style="color:var(--black)">Business Readiness Gate</strong>.</p>
+    <div class="completion-actions">
+      <a href="/access" class="btn-outline">← Return to Dashboard</a>
+      <a href="/phase-8" class="btn-primary" style="font-size:13px;padding:13px 28px">Continue to Business Readiness Gate →</a>
+    </div>
+  </div>
+
+  <!-- PROTECTED UTILITY FOOTER -->
+  <footer class="protected-utility-footer">
+    <div class="protected-utility-links">
+      <a href="/terms">Terms</a>
+      <a href="/privacy">Privacy</a>
+      <a href="/refund-policy">Refund Policy</a>
+      <a href="/digital-delivery">Digital Delivery</a>
+      <a href="/disclaimer">Disclaimer</a>
+      <a href="/support">Support</a>
+    </div>
+    <p class="protected-utility-note">Betrix Business Systems provides structured informational and execution guidance. This system does not provide legal, financial, tax, insurance, licensing, employment, or technical trade advice.</p>
+  </footer>
+
+</div><!-- /phase-layout -->
+
+<script src="/assets/app.js" defer></script>
+
+<!-- Memberstack test-mode install -->
+<script type="module">
+  import memberstackDOM from 'https://cdn.jsdelivr.net/npm/@memberstack/dom@latest/+esm';
+  const memberstack = memberstackDOM.init({
+    publicKey: "pk_sb_b090b30f6ecf589f710e",
+  });
+</script>
+
+</body>
+</html>
+```
+
+---
+
+File 11 of 19 complete. Waiting for **NEXT FILE**.

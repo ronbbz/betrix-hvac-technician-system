@@ -2,9 +2,20 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
-    {
-      "source": "/access",
-      "destination": "/"
-    }
+    { "source": "/access", "destination": "/access.html" },
+    { "source": "/phase-1", "destination": "/phase-1.html" },
+    { "source": "/phase-2", "destination": "/phase-2.html" },
+    { "source": "/phase-3", "destination": "/phase-3.html" },
+    { "source": "/phase-4", "destination": "/phase-4.html" },
+    { "source": "/phase-5", "destination": "/phase-5.html" },
+    { "source": "/phase-6", "destination": "/phase-6.html" },
+    { "source": "/phase-7", "destination": "/phase-7.html" },
+    { "source": "/phase-8", "destination": "/phase-8.html" },
+    { "source": "/terms", "destination": "/terms.html" },
+    { "source": "/privacy", "destination": "/privacy.html" },
+    { "source": "/refund-policy", "destination": "/refund-policy.html" },
+    { "source": "/digital-delivery", "destination": "/digital-delivery.html" },
+    { "source": "/disclaimer", "destination": "/disclaimer.html" },
+    { "source": "/support", "destination": "/support.html" }
   ]
 }
