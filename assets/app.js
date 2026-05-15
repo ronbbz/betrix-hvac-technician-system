@@ -1,6 +1,3 @@
-**`assets/app.js`**
-
-```javascript
 /* =============================================
    Betrix HVAC Technician Business System
    assets/app.js — Interactive behavior only
@@ -500,8 +497,4 @@ function selectP8Decision(opt){
   document.querySelectorAll('#p8Decision .position-opt').forEach(function(o){o.classList.remove('selected');});
   opt.classList.add('selected');
 }
-```
 
----
-
-File 2 of 19 complete. Waiting for **NEXT FILE**.
