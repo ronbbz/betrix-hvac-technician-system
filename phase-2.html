@@ -428,6 +428,14 @@
   import memberstackDOM from 'https://cdn.jsdelivr.net/npm/@memberstack/dom@latest/+esm';
   const memberstack = memberstackDOM.init({
     publicKey: "pk_sb_b090b30f6ecf589f710e",
+    useCookies: true
+  });
+  memberstack.getCurrentMember().then(({ data: member }) => {
+    if (!member) {
+      window.location.href = "/";
+    }
+  }).catch(() => {
+    window.location.href = "/";
   });
 </script>
 
