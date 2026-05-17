@@ -11,6 +11,7 @@
     { "source": "/phase-6", "destination": "/phase-6.html" },
     { "source": "/phase-7", "destination": "/phase-7.html" },
     { "source": "/phase-8", "destination": "/phase-8.html" },
+    { "source": "/signed-out", "destination": "/signed-out.html" },
     { "source": "/terms", "destination": "/terms.html" },
     { "source": "/privacy", "destination": "/privacy.html" },
     { "source": "/refund-policy", "destination": "/refund-policy.html" },
