@@ -18,6 +18,7 @@
     <div class="phase-nav-label">HVAC Technician Business System</div>
     <div style="display:flex;align-items:center;gap:0">
       <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">Dark</button>
+      <button class="theme-toggle" onclick="logoutMember()">Logout</button>
     </div>
   </div>
 </nav>
@@ -225,10 +226,12 @@
 <!-- Memberstack test-mode install -->
 <script type="module">
   import memberstackDOM from 'https://cdn.jsdelivr.net/npm/@memberstack/dom@latest/+esm';
+
   const memberstack = memberstackDOM.init({
     publicKey: "pk_sb_b090b30f6ecf589f710e",
     useCookies: true
   });
+
   memberstack.getCurrentMember().then(({ data: member }) => {
     if (!member) {
       window.location.href = "/";
@@ -236,6 +239,14 @@
   }).catch(() => {
     window.location.href = "/";
   });
+
+  window.logoutMember = function () {
+    memberstack.logout().then(() => {
+      window.location.href = "/";
+    }).catch(() => {
+      window.location.href = "/";
+    });
+  };
 </script>
 
 </body>
