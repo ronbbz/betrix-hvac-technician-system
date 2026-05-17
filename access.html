@@ -242,9 +242,9 @@
 
   window.logoutMember = function () {
     memberstack.logout().then(() => {
-      window.location.href = "/";
+      window.location.href = "/signed-out";
     }).catch(() => {
-      window.location.href = "/";
+      window.location.href = "/signed-out";
     });
   };
 </script>
