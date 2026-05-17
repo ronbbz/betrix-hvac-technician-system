@@ -18,7 +18,7 @@
     <div style="display:flex;align-items:center;gap:0">
       <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">Dark</button>
       <button class="nav-cta" onclick="window.location.href='https://buy.stripe.com/test_00w7sL1vx7yQ0Es3ab5ZC00'">Get Access — $79.99</button>
-      <button class="nav-cta" data-ms-modal="login">Member Login</button>
+      <button class="nav-cta" onclick="openMemberLogin()">Member Login</button>
     </div>
   </div>
 </nav>
@@ -357,10 +357,19 @@
 <script type="module">
   import memberstackDOM from 'https://cdn.jsdelivr.net/npm/@memberstack/dom@latest/+esm';
 
-  memberstackDOM.init({
+  const memberstack = memberstackDOM.init({
     publicKey: "pk_sb_b090b30f6ecf589f710e",
     useCookies: true
   });
+
+  window.openMemberLogin = function () {
+    memberstack.openModal("LOGIN").then(({ data, type }) => {
+      if (type === "LOGIN") {
+        memberstack.hideModal();
+        window.location.href = "/access";
+      }
+    });
+  };
 </script>
 </body>
 </html>
